@@ -1,0 +1,18 @@
+$primary: #eb645f;
+$secondary: #334155;
+$info: #0d6efd;
+$body-color: #FFF5EE;
+$body-bg: #334155;
+
+:root {
+    --footer: #1E293B;
+    --header: #1E293B;
+    --navbar: #33415560;
+    --dark-toggle: #FFF5EE;
+    --dark-toggle-hover: #FFF5EE80;
+    --toast-bg: #ffffff;
+    --steelblue: #38BDF8;
+    --aliceblue: #F0F8FF;
+}
+
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';

@@ -1,0 +1,30 @@
+@use '../custom';
+
+.nav-item-name {
+    transition: all .3s ease-in-out;
+}
+
+.nav-item-name:hover {
+    animation: rubberBand;
+    animation-duration: 1s;
+    animation-delay: .2s;
+    animation-iteration-count: 1;
+}
+
+.nav-dark-toggle {
+    display: block;
+    padding: 0.5rem 1rem;
+    margin: 0 10px;
+    float: right !important;
+    background-color: var(--dark-toggle);
+    color: var(--bs-secondary);
+    border-radius: 20px;
+    height: max-content;
+    border: 0;
+    width: 70px;
+}
+
+.nav-dark-toggle:hover {
+    box-shadow: 0 0px 15px var(--dark-toggle-hover);
+    transform: scale(1.05);
+}
