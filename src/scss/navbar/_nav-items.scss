@@ -1,5 +1,12 @@
 @use '../custom';
 
+@media (min-width: 768px) {
+    .nav-link:hover {
+        transition: all ease-out .15s;
+        transform: scale(1.2);
+    }
+}
+
 .nav-item-name {
     transition: all .3s ease-in-out;
 }
@@ -11,20 +18,21 @@
     animation-iteration-count: 1;
 }
 
+.nav-theme {
+    margin: 0 0 0 auto;
+}
+
 .nav-dark-toggle {
-    display: block;
     padding: 0.5rem 1rem;
-    margin: 0 10px;
-    float: right !important;
     background-color: var(--dark-toggle);
-    color: var(--bs-secondary);
-    border-radius: 20px;
+    color: var(--bs-light);
+    border-radius: 1px;
     height: max-content;
     border: 0;
     width: 70px;
 }
 
 .nav-dark-toggle:hover {
-    box-shadow: 0 0px 15px var(--dark-toggle-hover);
-    transform: scale(1.05);
+    transition: all ease-out .15s;
+    transform: scale(1.1);
 }

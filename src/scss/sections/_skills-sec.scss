@@ -1,12 +1,16 @@
 @use '../custom';
 
+#skills {
+    opacity: 0;
+}
+
 #skills-sec {
     display: flex;
     flex-wrap: wrap;
     min-height: 100vh;
     padding: 60px 30px;
     z-index: 5;
-    background-color: var(--bs-secondary);
+    background-color: var(--skills);
 
     & p {
         width: 100%;

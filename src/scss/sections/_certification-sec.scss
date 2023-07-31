@@ -1,0 +1,36 @@
+@use '../custom';
+
+.certification-sec {
+    background-color: var(--certification);
+}
+
+.certification-img {
+    transition: all ease-out .15s;
+    filter: saturate(0) blur(.8px);
+    border-radius: 5px;
+
+    &:hover {
+        transform: scale(1.05) skew(2deg);
+        filter: saturate(3) blur(0);
+    }
+}
+
+#certification{
+    opacity: 0;
+}
+
+#certification-title {
+    opacity: 0;
+    transition: all ease-out 1s;
+}
+
+#certification-1 {
+    opacity: 0;
+    transition: all ease-out 2s 0s;
+    animation-delay: .3s;
+}
+#certification-2 {
+    opacity: 0;
+    transition: all ease-out 2s 1s;
+    animation-delay: .3s;
+}

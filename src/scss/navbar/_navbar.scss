@@ -1,0 +1,33 @@
+@use '../custom';
+
+.navbar-styling {
+    padding: 30px 0;
+}
+
+.nav-animation {
+    animation: navAnimation .5s 0s ease-out;
+}
+
+@keyframes navAnimation {
+    0% {
+        padding: 30px 0;
+    }
+
+    100% {
+        padding: 8px 0;
+    }
+}
+
+.nav-animationReverse {
+    animation: navAnimationReverse .5s 0s ease-out;
+}
+
+@keyframes navAnimationReverse {
+    0% {
+        padding: 8px 0;
+    }
+
+    100% {
+        padding: 30px 0;
+    }
+}

@@ -8,6 +8,8 @@
     .footer-item {
         min-width: 60vw !important;
         text-align: center;
+        color: white !important;
+
     }
 }
 
@@ -21,6 +23,7 @@
     background-color: var(--footer);
     z-index: 10;
     padding: 30px;
+    color: white !important;
 
     & ul {
         list-style: none;
@@ -37,7 +40,8 @@
     margin: 0 auto;
     padding: auto;
     min-width: 25vw;
-    color: var(--aliceblue);
+    color: white !important;
+
 }
 
 // fontAwesome icon styling
@@ -58,4 +62,10 @@
     font-size: 15px;
     font-weight: 300;
     color: #FFF5EE;
+}
+
+.toast-welcome {
+    position: fixed;
+    top: 90px;
+    left: 20px;
 }

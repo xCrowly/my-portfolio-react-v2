@@ -3,13 +3,13 @@ import BootStrap from "bootstrap";
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./assets/scss/styles.css";
+import Certification from "./components_js/certificationSec";
 import FooterSection from "./components_js/footerSec";
 import Header from "./components_js/headerSec";
-import MainSection from "./components_js/mainSec";
+import MainSection from "./components_js/introSec";
 import Navbar from "./components_js/navbar";
 import ProjectsSection from "./components_js/projectsSec";
 import SkillSection from "./components_js/skillSec";
-import reportWebVitals from "./reportWebVitals";
 
 const navbar = ReactDOM.createRoot(document.getElementById("my-navbar"));
 navbar.render(<Navbar />);
@@ -20,6 +20,9 @@ header.render(<Header />);
 const main = ReactDOM.createRoot(document.getElementById('main'));
 main.render(<MainSection />)
 
+const certification = ReactDOM.createRoot(document.getElementById('certification'));
+certification.render(<Certification />)
+
 const projects = ReactDOM.createRoot(document.getElementById("projects"))
 projects.render(<ProjectsSection />)
 
@@ -29,23 +32,58 @@ skill.render(<SkillSection />)
 const footer = ReactDOM.createRoot(document.getElementById("footer"))
 footer.render(<FooterSection />)
 
-export { header };
+// export { header };
 
 window.onscroll = function () { myFunction() };
 
 function myFunction() {
-    if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
-        document.getElementById("main").className = "fadeIn";
+    // navbar Animation
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        document.getElementById("navbar").classList.add("nav-animation");
+        document.getElementById("navbar").classList.remove("navbar-styling", "nav-animationReverse");
+    } else {
+        document.getElementById("navbar").classList.remove("nav-animation");
+        document.getElementById("navbar").classList.add("navbar-styling", "nav-animationReverse");
     }
-    if (document.body.scrollTop > 1100 || document.documentElement.scrollTop > 1100) {
-        document.getElementById("projects").className = "fadeIn";
+
+    // header image animation
+    if (document.documentElement.scrollTop < document.documentElement.clientHeight * 3) {
+        document.getElementById("header-image").style.transform = `translateY(${1 - (document.documentElement.scrollTop / 2)}px)`;
     }
-    if (document.body.scrollTop > 1700 || document.documentElement.scrollTop > 1700) {
+
+    // intro text animation
+    if (document.documentElement.scrollTop > document.getElementById("main").offsetTop - 550) {
+        document.getElementById("intro-container").classList.add("animate__animated", "animate__bounceInDown");
+        document.getElementById("intro-container").style.opacity = `1`;
+
+    }
+
+    // certification items animation
+    if (document.documentElement.scrollTop > document.getElementById("certification").offsetTop - 550) {
+        document.getElementById("certification-title").classList.add("animate__animated", "animate__fadeInDown");
+        document.getElementById("certification").classList.add("animate__animated", "animate__backInUp");
+        document.getElementById("certification-1").classList.add("animate__animated", "animate__fadeInUp");
+        document.getElementById("certification-2").classList.add("animate__animated", "animate__fadeInUp");
+    }
+
+    // projects animations
+    if (document.documentElement.scrollTop > document.getElementById("projects").offsetTop - 350) {
+
+        document.getElementById("projects").classList.add("animate__animated", "animate__fadeIn");
+        for (let index = 1; index < 8; index++) {
+            if (index % 2 === 0) {
+                document.getElementById(`card${index}`).classList.add("animate__animated", "animate__fadeInUp")
+            } else {
+                document.getElementById(`card${index}`).classList.add("animate__animated", "animate__fadeInUp")
+            }
+
+        }
+    }
+
+    if (document.documentElement.scrollTop > document.getElementById("skills").offsetTop - 550) {
         document.getElementById("skills").className = "fadeIn";
+        document.getElementById("skills").style.opacity = "1";
     }
 }
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
 

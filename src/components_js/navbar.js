@@ -1,53 +1,58 @@
-import { faCode } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
-import imgMapDark from "../assets/svg/world_map_dark.svg";
-import imgMapLight from "../assets/svg/world_map_light.svg";
 
 const styles = {
-    backgroundImage: 'none',
     backgroundColor: 'var(--navbar)',
-    backdropFilter: 'blur(5px)'
+    backdropFilter: 'blur(5px)',
+    color: 'var(--bs-primary)'
+}
+
+function returnDark(s) {
+    s.style.setProperty("--bs-primary", "#3C486B")
+    s.style.setProperty("--bs-secondary", "#FFF5EE")
+    s.style.setProperty("--bs-body-color", "#F0F0F0")
+    s.style.setProperty("--bs-body-bg", "#F0F0F0")
+    s.style.setProperty("--footer", "#242a3f")
+    s.style.setProperty("--header", "#F0F0F0")
+    s.style.setProperty("--projects", "#242a3f")
+    s.style.setProperty("--card", "#303955")
+    s.style.setProperty("--intro", "#242a3f")
+    s.style.setProperty("--certification", "#303955")
+    s.style.setProperty("--skills", "#303955")
+    s.style.setProperty("--navbar", "#F0F0F0")
+    s.style.setProperty("--dark-toggle", "#F45050")
+    s.style.setProperty("--dark-toggle-hover", "#FFF5EE80")
+}
+function returnLight(s) {
+    s.style.setProperty("--bs-primary", "#F0F0F0")
+    s.style.setProperty("--bs-secondary", "#334155")
+    s.style.setProperty("--bs-body-color", "#3C486B")
+    s.style.setProperty("--bs-body-bg", "#3C486B")
+    s.style.setProperty("--footer", "#3C486B")
+    s.style.setProperty("--header", "#F0F0F0")
+    s.style.setProperty("--projects", "#FFFFFF")
+    s.style.setProperty("--card", "#dadbeb")
+    s.style.setProperty("--intro", "#FFFFFF")
+    s.style.setProperty("--certification", "#dadbeb")
+    s.style.setProperty("--skills", "#dadbeb")
+    s.style.setProperty("--navbar", "#3C486B")
+    s.style.setProperty("--dark-toggle", "#F45050")
+    s.style.setProperty("--dark-toggle-hover", "#38434F80")
 }
 
 function Navbar() {
 
     const [darkMode, setDarkMode] = useState(localStorage.getItem('themeMode'));
-    const mapDark = imgMapDark;
-    const mapLight = imgMapLight;
 
-    var s = document.querySelector(":root")
+    var getRoot = document.querySelector(":root")
     function set_dark() {
 
         setDarkMode((darkMode) => {
             if (darkMode === 'true' || darkMode === 'null') {
-                s.style.setProperty("--bs-primary", "#eb645f")
-                s.style.setProperty("--bs-secondary", "#FFF5EE")
-                s.style.setProperty("--bs-body-color", "#212529")
-                s.style.setProperty("--bs-body-bg", "#FFF5EE")
-                s.style.setProperty("--footer", "#162B45")
-                s.style.setProperty("--header", "#FFDAB9")
-                s.style.setProperty("--navbar", "#FFF5EE60")
-                s.style.setProperty("--dark-toggle", "#38434F")
-                s.style.setProperty("--dark-toggle-hover", "#38434F80")
-                s.style.setProperty("--toast-bg", "#ffffff")
-                s.style.setProperty("--steelblue", "#4682B4")
-
+                returnLight(getRoot)
                 localStorage.setItem('themeMode', 'false')
                 return darkMode = localStorage.getItem('themeMode');
             } else {
-                s.style.setProperty("--bs-primary", "#eb645f")
-                s.style.setProperty("--bs-secondary", "#334155")
-                s.style.setProperty("--bs-body-color", "#FFF5EE")
-                s.style.setProperty("--bs-body-bg", "#334155")
-                s.style.setProperty("--footer", "#1E293B")
-                s.style.setProperty("--header", "#1E293B")
-                s.style.setProperty("--navbar", "#33415560")
-                s.style.setProperty("--dark-toggle", "#FFF5EE")
-                s.style.setProperty("--dark-toggle-hover", "#FFF5EE80")
-                s.style.setProperty("--toast-bg", "#ffffff")
-                s.style.setProperty("--steelblue", "#38BDF8")
-
+                returnDark(getRoot)
                 localStorage.setItem('themeMode', 'true')
                 return darkMode = localStorage.getItem('themeMode');
             }
@@ -56,85 +61,48 @@ function Navbar() {
 
     function checkDarkMode(darkMode) {
         if (darkMode === 'true' || darkMode === 'null') {
-            s.style.setProperty("--bs-primary", "#eb645f")
-            s.style.setProperty("--bs-secondary", "#FFF5EE")
-            s.style.setProperty("--bs-body-color", "#212529")
-            s.style.setProperty("--bs-body-bg", "#FFF5EE")
-            s.style.setProperty("--footer", "#162B45")
-            s.style.setProperty("--header", "#FFDAB9")
-            s.style.setProperty("--navbar", "#FFF5EE60")
-            s.style.setProperty("--dark-toggle", "#38434F")
-            s.style.setProperty("--dark-toggle-hover", "#38434F80")
-            s.style.setProperty("--toast-bg", "#ffffff")
-            s.style.setProperty("--steelblue", "#4682B4")
-
+            returnLight(getRoot)
             return;
         } else {
-            s.style.setProperty("--bs-primary", "#eb645f")
-            s.style.setProperty("--bs-secondary", "#334155")
-            s.style.setProperty("--bs-body-color", "#FFF5EE")
-            s.style.setProperty("--bs-body-bg", "#334155")
-            s.style.setProperty("--footer", "#1E293B")
-            s.style.setProperty("--header", "#1E293B")
-            s.style.setProperty("--navbar", "#33415560")
-            s.style.setProperty("--dark-toggle", "#FFF5EE")
-            s.style.setProperty("--dark-toggle-hover", "#FFF5EE80")
-            s.style.setProperty("--toast-bg", "#ffffff")
-            s.style.setProperty("--steelblue", "#38BDF8")
-
+            returnDark(getRoot)
             return;
         }
     }
     checkDarkMode(darkMode)
 
-    function returnMap() {
-        if (darkMode === 'true') {
-            return (<img className="img-map img-fluid"
-                src={mapLight}
-                alt="My profile img"
-            />)
-        } else {
-            return (<img className="img-map img-fluid"
-                src={mapDark}
-                alt="My profile img"
-            />)
-        }
-    }
-
     return (
-        <div >
-            {returnMap()}
+        <div>
 
-            <nav className="navbar navbar-expand-md fixed-top shadow w-100" style={styles}>
+            <nav id="navbar"
+                className="navbar-styling nav-animationReverse navbar navbar-expand-md fixed-top shadow" style={styles}>
 
-                <div className="container-fluid">
+                <div className="container">
 
-                    <div className="mx-2 text-info">
-                        <FontAwesomeIcon icon={faCode} />
-                    </div>
+                    <a className="navbar-brand fw-bolder nav-item-name" style={{ color: "var(--body-color)" }} href="#img-header">Ahmed Badawy</a>
 
-                    <a className="navbar-brand fw-bolder nav-item-name" style={{ color: "var(--bs-primary)" }} href="#img-header">Ahmed Badawy</a>
-
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    <button className="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
 
                     <div className="collapse navbar-collapse" id="navbarNav">
-                        <ul className="navbar-nav">
+                        <ul className="navbar-nav w-100">
                             <li className="nav-item">
-                                <a className="nav-link" style={{ color: "var(--bs-body-color)" }} aria-current="page" href="#main">About me</a>
+                                <a className="nav-link" style={{ color: "var(--bs-primary)" }} aria-current="page" href="#main">About me</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" style={{ color: "var(--bs-body-color)" }} href="#projects-sec">My projects</a>
+                                <a className="nav-link" style={{ color: "var(--bs-primary)" }} aria-current="page" href="#certification">Certification</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" style={{ color: "var(--bs-body-color)" }} href="#skills-sec">Skills</a>
+                                <a className="nav-link" style={{ color: "var(--bs-primary)" }} href="#projects-sec">My projects</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" style={{ color: "var(--bs-body-color)" }} href="#footer-sec">Contact me</a>
+                                <a className="nav-link" style={{ color: "var(--bs-primary)" }} href="#skills-sec">Skills</a>
                             </li>
                             <li className="nav-item">
+                                <a className="nav-link" style={{ color: "var(--bs-primary)" }} href="#footer-sec">Contact me</a>
+                            </li>
+                            <li className="nav-item nav-theme">
                                 <button className="nav-dark-toggle"
                                     onClick={set_dark}>
                                     {darkMode === 'false' ? 'Light'

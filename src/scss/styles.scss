@@ -1,8 +1,10 @@
 @use './custom';
 @use './navbar/nav-items';
+@use './navbar/navbar';
 @use './sections/footer-sec';
 @use './sections/header-sec';
-@use './sections/main-sec';
+@use './sections/intro-sec';
+@use './sections/certification-sec';
 @use './sections/projects-sec';
 @use './sections/skills-sec';
 @use './sections/card';

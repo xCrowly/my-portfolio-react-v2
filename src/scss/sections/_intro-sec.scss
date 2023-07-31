@@ -1,0 +1,20 @@
+@use '../custom';
+
+#main {
+    display: flex;
+    min-height: auto;
+    padding-top: 55px;
+    background: var(--intro);
+    z-index: 5 !important;
+}
+
+#intro-container {
+    padding: 50px;
+    opacity: 0;
+}
+
+#main-sec {
+    background-color: var(--certification);
+    border: 1px solid var(--navbar);
+    z-index: 5 !important;
+}

@@ -5,43 +5,43 @@
                 "name": "Expense Tracker",
                 "link": "https://expense-tracker-404.netlify.app/",
                 "image": "Expense-Tracker.png",
-                "description": "Created using React.js, React-routers and firebase"
+                "description": "calculates your expenses and group them together by Months. You can add expenses with any date or notes, delete any specific expenses too. Designed by: Html, css, javascript, Bootstrap, sass, React, React-router, Firebase Authentication and Realtime Database"
             },
             {
                 "name": "Meme boss",
                 "link": "https://meme-boss.netlify.app/",
                 "image": "Meme-boss.png",
-                "description": "Meme generator app using React.js"
+                "description": "Memes website which generates random meme from Memes Api. Designed by: Html, css, javascript, Bootstrap, sass, React and PostMan Api"
             },
             {
                 "name": "Rock-Paper-Scissors",
                 "link": "https://xcrowly.github.io/Rock-Paper-Scissors/",
                 "image": "Rock-Paper-Scissors.png",
-                "description": "Rock-Paper-Scissors app using javaScript"
+                "description": "Just a Rock-Paper-Scissors website. Designed by: Html, css and javascript"
             },
             {
                 "name": "Digital clock",
                 "link": "https://xcrowly.github.io/Digital-clock/",
                 "image": "Digital-clock.png",
-                "description": "Digital clock app using javaScript"
+                "description": "Digital clock for the current time. Designed by: Html, css and javascript"
             },
             {
                 "name": "Resume",
                 "link": "https://my-resume-10.netlify.app/",
                 "image": "Resume.png",
-                "description": "Resume made with Html-css-bootStrap"
+                "description": "Resume which was just for practicing. Designed by: Html, css, javascript, Sass, FontAwesome and Bootstrap"
             },
             {
                 "name": "Calculator",
                 "link": "https://xcrowly.github.io/Calculator/",
                 "image": "Calculator.png",
-                "description": "Calculator app using javaScript"
+                "description": "A great app to practice JavaScript. Designed by: Html, css and javascript"
             },
             {
                 "name": "Todo list",
                 "link": "https://xcrowly.github.io/Todo-list/",
                 "image": "Todo-list.png",
-                "description": "Todo list app using javaScript"
+                "description": "Simple to do list. Designed by: Html, css and javascript"
             }
         ]
     }

@@ -42,16 +42,11 @@ function FooterSection() {
 
     return (
         <footer id="footer-sec" className="footer-sec ">
-            {toast}
             <ul className="footer-item flex-colomn p-2 my-5">
-                <li className="flex-row text-primary fw-bold" >
+                <li className="flex-row text-danger fw-bold" >
                     <h1 className="fw-bold h1-bottom">Ahmed Badawy</h1>
                 </li>
-                <li className="flex-row">
-                    Don't hesitate to contact me,
-                    <br />  
-                    I'm always in your service.
-                </li>
+                {toast}
             </ul>
 
             <ul className="footer-item flex-colomn">
@@ -77,7 +72,7 @@ function FooterSection() {
                                   1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6
                                    3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
                             </svg></i>
-                            <span style={{color:"#FFF5EE"}}>GitHub</span>
+                            <span style={{ color: "#FFF5EE" }}>GitHub</span>
                         </h1>
                     </a>
                 </li>
@@ -90,7 +85,7 @@ function FooterSection() {
                                 <path fill="#FFF5EE" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480
                                  31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
                             </svg></i>
-                            <span style={{color:"#FFF5EE"}}>LinkedIn</span>
+                            <span style={{ color: "#FFF5EE" }}>LinkedIn</span>
                         </h1>
                     </a>
                 </li>
@@ -104,7 +99,7 @@ function FooterSection() {
                         <h1>
                             {/* <i><FontAwesomeIcon icon={faAt} className="fa-icon" color="#FFF5EE"
                                 style={{ margin: '0 10px 0 0', width: '35px' }} /></i> */}
-                            <span style={{color:"#FFF5EE"}}>Email</span>
+                            <span style={{ color: "#FFF5EE" }}>Email</span>
                         </h1>
                     </div>
                 </li>
@@ -114,7 +109,7 @@ function FooterSection() {
                       text-decoration-none" rel="noreferrer">
                         <h1>
 
-                            <span style={{color:"#FFF5EE"}}>Resume</span>
+                            <span style={{ color: "#FFF5EE" }}>Resume</span>
                         </h1>
                     </a>
                 </li>

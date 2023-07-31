@@ -1,106 +1,22 @@
 @use '../custom';
 
 
-@media (max-width: 576px) {
-    .img-header-background {
-        background: var(--header);
-        padding-top: 20vh !important;
-        min-height: 100vh;
-        width: 100%;
-    }
-
-    .header-text {
-        padding: 15px;
-
-        & h1 {
-            font-size: 6vh !important;
-        }
-
-        & p {
-            font-size: 3vh !important;
-        }
-
-        & h2 {
-            font-size: 4vh !important;
-        }
-
-        & h3 {
-            font-size: 2vh !important;
-        }
-    }
-
+.header-section {
+    background-color: var(--bs-body-color);
+    min-height: 100vh;
+    padding-top: 100px;
+   
 }
 
-// header section body 
-.img-header-background {
-    background: var(--header);
-    min-height: 100vh;
+#header-image {
+    position: fixed;
+    z-index: 0 !important;
+}
+
+.header-image {
     width: 100%;
-    padding: 30px;
-}
-
-// main image in the header section
-.img-profile {
-    min-width: 35vw;
-    margin: auto;
-    animation: zoomIn 1s alternate 0s;
-    z-index: 2;
-}
-
-// main image background in the header section
-.img-map {
-    position: fixed;
-    top: 0;
-    left: 0;
-    min-height: 100vh;
-    animation: transitionMap 14s alternate 0s infinite;
-}
-
-// header section text content
-.header-text {
-    z-index: 2;
-
-    & h1 {
-        font-size: 6vw;
-        color: var(--bs-primary);
-        // margin-bottom: 30px;
-        font-weight: 400;
-        animation: main-text-anim 1.5s alternate 0s;
-    }
-
-    & p {
-        font-size: 3vw;
-        color: var(--body-color);
-        font-weight: 400;
-        font-style: italic;
-        line-height: 2vh;
-        animation: main-text-anim 1.5s alternate 0s;
-    }
-
-    & h2 {
-        font-size: 6vw;
-        color: var(--steelblue);
-        font-weight: 700;
-        font-style: bold !important;
-        animation: main-text-anim 1.5s alternate 0s;
-    }
-
-    & h3 {
-        font-size: 3vw;
-        color: var(--body-color);
-        font-weight: 700;
-        animation: main-text-anim 1.5s alternate 0s;
-    }
-}
-
-// toast styling
-.toast-welcome {
-    position: fixed;
-    width: auto;
-    top: 68px;
-    right: 8px;
-    height: auto;
-    z-index: 2001;
+    height: calc(100vh - 100px);
+    object-fit: cover;
 }
 
 // text animation
@@ -133,7 +49,7 @@
 }
 
 .zoomIn {
-    animation: zoomIn .5s 0s;
+    animation: zoomIn .5s 0s ease-in-out;
 }
 
 @keyframes fadeIn {
