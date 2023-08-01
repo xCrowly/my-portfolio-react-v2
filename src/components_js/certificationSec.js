@@ -5,7 +5,7 @@ import cert_resp from '../assets/images/FreeCodeCamp_Responsive_web_design.png';
 function Certification() {
     return (
         <div className="certification-sec p-5">
-            <h1 id="certification-title" className="text-center pt-5 pb-4">Certifications</h1>
+            <h1 id="certification-title" className="text-center fw-bold pt-5">Certifications</h1>
             <div className='d-flex row justify-content-around align-items-center container m-auto'>
                 <div id="certification-1" className='col-md-6 p-3'>
                     <a href="https://www.freecodecamp.org/certification/Crowly/responsive-web-design"

@@ -1,15 +1,21 @@
 @use '../custom';
 
+@media (max-width: 768px) {
+    .header-text{
+        font-size: calc(100vh /10) !important;
+
+    }
+}
 
 .header-section {
     background-color: var(--bs-body-color);
     min-height: 100vh;
-    padding-top: 100px;
-   
+    padding-top: 100px; 
 }
 
 #header-image {
     position: fixed;
+    filter: blur(0px);
     z-index: 0 !important;
 }
 
@@ -17,6 +23,18 @@
     width: 100%;
     height: calc(100vh - 100px);
     object-fit: cover;
+}
+
+.header-text{
+    position: absolute;
+    margin: 50px;
+    z-index: 1 !important;
+    font-size: calc(100vw / 12);
+    font-weight: normal;
+    color: #F0F0F0;
+    bottom:0;
+    left: auto;
+    text-shadow: 3px 3px 3px #1E293B;
 }
 
 // text animation

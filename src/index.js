@@ -38,7 +38,7 @@ window.onscroll = function () { myFunction() };
 
 function myFunction() {
     // navbar Animation
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
         document.getElementById("navbar").classList.add("nav-animation");
         document.getElementById("navbar").classList.remove("navbar-styling", "nav-animationReverse");
     } else {
@@ -49,6 +49,7 @@ function myFunction() {
     // header image animation
     if (document.documentElement.scrollTop < document.documentElement.clientHeight * 3) {
         document.getElementById("header-image").style.transform = `translateY(${1 - (document.documentElement.scrollTop / 2)}px)`;
+        document.getElementById("header-image").style.filter = `blur(${(document.documentElement.scrollTop / 100)}px)`;
     }
 
     // intro text animation

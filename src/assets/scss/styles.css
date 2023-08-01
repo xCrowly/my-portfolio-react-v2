@@ -10899,6 +10899,11 @@ textarea.form-control-lg {
   left: 20px;
 }
 
+@media (max-width: 768px) {
+  .header-text {
+    font-size: 10vh !important;
+  }
+}
 .header-section {
   background-color: var(--bs-body-color);
   min-height: 100vh;
@@ -10907,6 +10912,7 @@ textarea.form-control-lg {
 
 #header-image {
   position: fixed;
+  filter: blur(0px);
   z-index: 0 !important;
 }
 
@@ -10914,6 +10920,18 @@ textarea.form-control-lg {
   width: 100%;
   height: calc(100vh - 100px);
   object-fit: cover;
+}
+
+.header-text {
+  position: absolute;
+  margin: 50px;
+  z-index: 1 !important;
+  font-size: 8.3333333333vw;
+  font-weight: normal;
+  color: #F0F0F0;
+  bottom: 0;
+  left: auto;
+  text-shadow: 3px 3px 3px #1E293B;
 }
 
 @keyframes main-text-anim {
@@ -10984,6 +11002,15 @@ textarea.form-control-lg {
   z-index: 5 !important;
 }
 
+@media (max-width: 768px) {
+  .certification-img {
+    filter: saturate(1) blur(0) !important;
+  }
+  .certification-img:hover {
+    transform: scale(1.05) skew(2deg);
+    filter: saturate(3) !important;
+  }
+}
 .certification-sec {
   background-color: var(--certification);
 }

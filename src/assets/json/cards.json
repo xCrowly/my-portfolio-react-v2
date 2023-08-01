@@ -5,7 +5,7 @@
                 "name": "Expense Tracker",
                 "link": "https://expense-tracker-404.netlify.app/",
                 "image": "Expense-Tracker.png",
-                "description": "calculates your expenses and group them together by Months. You can add expenses with any date or notes, delete any specific expenses too. Designed by: Html, css, javascript, Bootstrap, sass, React, React-router, Firebase Authentication and Realtime Database"
+                "description": "calculates your expenses and group them by Months. You can add expenses with any date or notes, delete any specific expenses too. Designed by: Html, css, javascript, Bootstrap, sass, React, React-router, Firebase Authentication and Realtime Database"
             },
             {
                 "name": "Meme boss",

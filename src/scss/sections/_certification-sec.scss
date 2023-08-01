@@ -1,5 +1,16 @@
 @use '../custom';
 
+@media (max-width: 768px) {
+    .certification-img {
+        filter: saturate(1) blur(0) !important;
+
+        &:hover {
+            transform: scale(1.05) skew(2deg);
+            filter: saturate(3) !important;
+        }
+    }
+}
+
 .certification-sec {
     background-color: var(--certification);
 }
@@ -15,7 +26,7 @@
     }
 }
 
-#certification{
+#certification {
     opacity: 0;
 }
 
@@ -29,6 +40,7 @@
     transition: all ease-out 2s 0s;
     animation-delay: .3s;
 }
+
 #certification-2 {
     opacity: 0;
     transition: all ease-out 2s 1s;

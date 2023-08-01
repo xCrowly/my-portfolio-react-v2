@@ -4,8 +4,8 @@ function MainSection() {
         <div id="main-sec" className="fs-5 container
         d-flex align-items-center justify-content-center">
             <div id="intro-container">
-                <strong className="fs-2">
-                    Hello there,
+                <strong className="fs-1">
+                    Hello,
                 </strong>
                 <br />
                 <br />I'm a <strong>Self taught developer</strong> with unlimited thirst for continuous learning and
