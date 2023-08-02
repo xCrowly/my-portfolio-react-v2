@@ -5,8 +5,8 @@
   --projects: #dadbeb;
   --card: #dadbeb;
   --intro: #dadbeb;
-  --certification: #FFFFFF;
-  --skills: #FFFFFF;
+  --certification: #dadbeb;
+  --skills: #dadbeb;
   --navbar: #33415560;
   --dark-toggle: #FFF5EE;
   --dark-toggle-hover: #FFF5EE80;
@@ -10901,7 +10901,8 @@ textarea.form-control-lg {
 
 @media (max-width: 768px) {
   .header-text {
-    font-size: 10vh !important;
+    font-size: 6.25vh !important;
+    margin: 35px !important;
   }
 }
 .header-section {
@@ -10912,7 +10913,6 @@ textarea.form-control-lg {
 
 #header-image {
   position: fixed;
-  filter: blur(0px);
   z-index: 0 !important;
 }
 
@@ -10924,7 +10924,7 @@ textarea.form-control-lg {
 
 .header-text {
   position: absolute;
-  margin: 50px;
+  margin: 35px;
   z-index: 1 !important;
   font-size: 8.3333333333vw;
   font-weight: normal;
@@ -11050,16 +11050,12 @@ textarea.form-control-lg {
   background-color: var(--projects) !important;
 }
 
-#skills {
-  opacity: 0;
-}
-
 #skills-sec {
   display: flex;
   flex-wrap: wrap;
   min-height: 100vh;
   padding: 60px 30px;
-  z-index: 5;
+  z-index: 10 !important;
   background-color: var(--skills);
 }
 #skills-sec p {

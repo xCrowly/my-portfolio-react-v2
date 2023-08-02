@@ -32,11 +32,14 @@ skill.render(<SkillSection />)
 const footer = ReactDOM.createRoot(document.getElementById("footer"))
 footer.render(<FooterSection />)
 
-// export { header };
 
-window.onscroll = function () { myFunction() };
+window.onscroll = () => myFunction();
 
 function myFunction() {
+    // navbar Animation
+    if (document.documentElement.scrollTop > 10) {
+        document.getElementById("header-image").classList.remove("animate__animated", "animate__fadeInDown");
+    }
     // navbar Animation
     if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
         document.getElementById("navbar").classList.add("nav-animation");
@@ -82,8 +85,8 @@ function myFunction() {
     }
 
     if (document.documentElement.scrollTop > document.getElementById("skills").offsetTop - 550) {
-        document.getElementById("skills").className = "fadeIn";
-        document.getElementById("skills").style.opacity = "1";
+        document.getElementById("skills-sec").className = "fadeIn";
+        document.getElementById("skills-sec").style.opacity = "1";
     }
 }
 

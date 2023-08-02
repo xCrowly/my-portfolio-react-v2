@@ -1,8 +1,9 @@
 @use '../custom';
 
 @media (max-width: 768px) {
-    .header-text{
-        font-size: calc(100vh /10) !important;
+    .header-text {
+        font-size: calc(100vh /16) !important;
+        margin: 35px !important;
 
     }
 }
@@ -10,12 +11,11 @@
 .header-section {
     background-color: var(--bs-body-color);
     min-height: 100vh;
-    padding-top: 100px; 
+    padding-top: 100px;
 }
 
 #header-image {
     position: fixed;
-    filter: blur(0px);
     z-index: 0 !important;
 }
 
@@ -25,14 +25,14 @@
     object-fit: cover;
 }
 
-.header-text{
+.header-text {
     position: absolute;
-    margin: 50px;
+    margin: 35px;
     z-index: 1 !important;
     font-size: calc(100vw / 12);
     font-weight: normal;
     color: #F0F0F0;
-    bottom:0;
+    bottom: 0;
     left: auto;
     text-shadow: 3px 3px 3px #1E293B;
 }
