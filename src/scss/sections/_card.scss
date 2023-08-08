@@ -1,44 +1,42 @@
-@use '../custom';
+@use "../custom";
 
-
-// card body 
+// card body
 .card-holder {
-    background-color: var(--card);
-    color: var(--navbar);
-    opacity: 0;
-    margin: 15px 0;
+  background-color: var(--card);
+  color: var(--navbar);
+  opacity: 0;
+  margin: 15px 0;
 }
 
 // card button
 .card-btn {
-    background: var(--steelblue);
-    color: var(--aliceblue);
-    position: absolute;
-    text-decoration: none;
-    padding: 7px 10px;
-    border-radius: 5px 0 5px 0;
-    left: 50%;
-    bottom: 0;
-    transform: translatex(-50%) translateY(50%);
-    transition: all .15s ease-in-out;
+  background: var(--steelblue);
+  color: var(--aliceblue);
+  position: absolute;
+  text-decoration: none;
+  padding: 7px 10px;
+  border-radius: 5px 0 5px 0;
+  left: 50%;
+  bottom: 0;
+  transform: translatex(-50%) translateY(50%);
+  transition: all 0.15s ease-in-out;
 
-    &:hover {
-        cursor: pointer;
-        box-shadow: 5px 10px 15px #00000040;
-        color: var(--steelblue) !important;
-        background: var(--aliceblue) !important;
-
-    }
+  &:hover {
+    cursor: pointer;
+    box-shadow: 5px 10px 15px #00000040;
+    color: var(--steelblue) !important;
+    background: var(--aliceblue) !important;
+  }
 }
 
 // card image
 .card-image {
-    width: 100%;
-    object-fit: cover;
-    border: 3px solid var(--navbar);
-    transition: all ease-in-out .15s;
+  width: 100%;
+  object-fit: cover;
+  border: 3px solid var(--navbar);
+  transition: all ease-in-out 0.15s;
 
-    &:hover {
-        transform: scale(1.1);
-    }
+  &:hover {
+    transform: scale(1.1);
+  }
 }

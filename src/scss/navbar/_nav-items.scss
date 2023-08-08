@@ -1,38 +1,41 @@
-@use '../custom';
+@use "../custom";
 
 @media (min-width: 768px) {
-    .nav-link:hover {
-        transition: all ease-out .15s;
-        transform: scale(1.2);
-    }
+  .nav-link:hover {
+    transform: scale(1.2);
+  }
+}
+
+.nav-link {
+  transition: all ease-in-out 0.15s;
 }
 
 .nav-item-name {
-    transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .nav-item-name:hover {
-    animation: rubberBand;
-    animation-duration: 1s;
-    animation-delay: .2s;
-    animation-iteration-count: 1;
+  animation: rubberBand;
+  animation-duration: 1s;
+  animation-delay: 0.2s;
+  animation-iteration-count: 1;
 }
 
 .nav-theme {
-    margin: 0 0 0 auto;
+  margin: 0 0 0 auto;
 }
 
 .nav-dark-toggle {
-    padding: 0.5rem 1rem;
-    background-color: var(--dark-toggle);
-    color: var(--bs-light);
-    border-radius: 1px;
-    height: max-content;
-    border: 0;
-    width: 70px;
+  padding: 0.5rem 1rem;
+  background-color: var(--dark-toggle);
+  color: var(--bs-light);
+  border-radius: 1px;
+  height: max-content;
+  border: 0;
+  width: 70px;
 }
 
 .nav-dark-toggle:hover {
-    transition: all ease-out .15s;
-    transform: scale(1.1);
+  transition: all ease-out 0.15s;
+  transform: scale(1.1);
 }

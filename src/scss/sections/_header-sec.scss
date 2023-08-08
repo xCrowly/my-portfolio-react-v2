@@ -1,100 +1,99 @@
-@use '../custom';
+@use "../custom";
 
 @media (max-width: 768px) {
-    .header-text {
-        font-size: calc(100vh /16) !important;
-        margin: 35px !important;
-
-    }
+  .header-text {
+    font-size: calc(100vh / 16) !important;
+    margin: 35px !important;
+  }
 }
 
 .header-section {
-    background-color: var(--bs-body-color);
-    min-height: 100vh;
-    padding-top: 100px;
+  background-color: var(--bs-body-color);
+  min-height: 100vh;
+
+  padding-top: 100px;
 }
 
 #header-image {
-    position: fixed;
-    z-index: 0 !important;
+  position: fixed;
+  z-index: 0 !important;
 }
 
 .header-image {
-    width: 100%;
-    height: calc(100vh - 100px);
-    object-fit: cover;
+  width: 100%;
+  height: calc(100vh - 100px);
+  object-fit: cover;
 }
 
 .header-text {
-    position: absolute;
-    margin: 35px;
-    z-index: 1 !important;
-    font-size: calc(100vw / 12);
-    font-weight: normal;
-    color: #F0F0F0;
-    bottom: 0;
-    left: auto;
-    text-shadow: 3px 3px 3px #1E293B;
+  position: absolute;
+  z-index: 1 !important;
+  font-size: calc(100vw / 12);
+  font-weight: normal;
+  color: #f0f0f0;
+  bottom: 0;
+  left: auto;
+  text-shadow: 3px 3px 3px #1e293b;
 }
 
 // text animation
 @keyframes main-text-anim {
-    0% {
-        transform: translate3d(-100%, -400%, 0);
-        opacity: 0;
-    }
+  0% {
+    transform: translate3d(-100%, -400%, 0);
+    opacity: 0;
+  }
 
-    100% {
-        opacity: 1;
-    }
+  100% {
+    opacity: 1;
+  }
 }
 
 // text animation class
 .main-text-anim {
-    animation: main-text-anim .5s 0s;
+  animation: main-text-anim 0.5s 0s;
 }
 
 // default sec animation
 @keyframes zoomIn {
-    0% {
-        opacity: 0;
-        transform: scale3d(.3, .3, .3);
-    }
+  0% {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
 
-    100% {
-        opacity: 1;
-    }
+  100% {
+    opacity: 1;
+  }
 }
 
 .zoomIn {
-    animation: zoomIn .5s 0s ease-in-out;
+  animation: zoomIn 0.5s 0s ease-in-out;
 }
 
 @keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
+  0% {
+    opacity: 0;
+  }
 
-    100% {
-        opacity: 1;
-    }
+  100% {
+    opacity: 1;
+  }
 }
 
 .fadeIn {
-    animation: fadeIn 1.6s 0s;
+  animation: fadeIn 1.6s 0s;
 }
 
 // main image background animation
 @keyframes transitionMap {
-    0% {
-        transform: scale(1) rotateZ(0) skewX(0);
-    }
+  0% {
+    transform: scale(1) rotateZ(0) skewX(0);
+  }
 
-    50% {
-        transform: scale(1.7) rotateZ(-10deg) skewX(10deg);
-    }
+  50% {
+    transform: scale(1.7) rotateZ(-10deg) skewX(10deg);
+  }
 
-    100% {
-        transform: scale(1) rotateZ(0) skewX(0);
-    }
+  100% {
+    transform: scale(1) rotateZ(0) skewX(0);
+  }
 }

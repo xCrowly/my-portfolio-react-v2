@@ -1,23 +1,23 @@
-$primary: #3C486B;
+$primary: #3c486b;
 $info: #0d6efd;
-$warning: #F9D949;
-$danger: #F45050;
-$body-color: #F0F0F0;
-$body-bg: #3C486B;
-$light: #F0F0F0;
+$warning: #f9d949;
+$danger: #f45050;
+$body-color: #f0f0f0;
+$body-bg: #3c486b;
+$light: #f0f0f0;
 $dark: #0d0f17;
 
 :root {
-    --footer: #1E293B;
-    --header: #1E293B;
-    --projects: #dadbeb;
-    --card: #dadbeb;
-    --intro: #dadbeb;
-    --certification: #dadbeb;
-    --skills: #dadbeb;
-    --navbar: #33415560;
-    --dark-toggle: #FFF5EE;
-    --dark-toggle-hover: #FFF5EE80;
+  --footer: #1e293b;
+  --header: #1e293b;
+  --projects: #dadbeb;
+  --card: #dadbeb;
+  --intro: #dadbeb;
+  --certification: #dadbeb;
+  --skills: #dadbeb;
+  --navbar: #33415560;
+  --dark-toggle: #fff5ee;
+  --dark-toggle-hover: #fff5ee80;
 }
 
-@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
