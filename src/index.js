@@ -94,6 +94,7 @@ function myFunction() {
     Object.values(
         document.getElementById("projects-container").childNodes
     ).map(
+        // eslint-disable-next-line array-callback-return
         (item) => {
             if (document.documentElement.scrollTop > document.getElementById(`${item.attributes.id.nodeValue}`).offsetTop - 350) {
                 document.getElementById(`${item.attributes.id.nodeValue}`).classList.add("animate__animated", "animate__fadeInUp")
