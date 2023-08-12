@@ -4,7 +4,7 @@ function Header() {
   return (
     <div className="header-section">
       <div className="container">
-        <h1 className="header-text animate__animated animate__fadeInUp">
+        <h1 id="header-text" className="header-text">
           <i>
             <b>Hi there!,</b>
           </i>
@@ -14,8 +14,8 @@ function Header() {
       </div>
       <img
         id="header-image"
-        className="header-image animate__animated animate__fadeInDown"
-        src={require("../assets/images/IMG_20230207_160156.png")}
+        className="header-image "
+        src={require("../assets/images/IMG_20230207_160156.jpg")}
         alt=""
       />
     </div>

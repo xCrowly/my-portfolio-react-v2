@@ -1,0 +1,25 @@
+@use "../custom";
+
+.loading {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
+  z-index: 9999;
+}
+
+.loading-text {
+  color: black;
+  text-align: center;
+  margin: 50vh auto;
+}
+
+.loading-icon {
+  color: #3C486B !important;
+  position: fixed;
+  top: 45vh;
+  left: calc(50vw - 18px);
+}

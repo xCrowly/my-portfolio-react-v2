@@ -7,9 +7,15 @@ import Certification from "./components_js/certificationSec";
 import FooterSection from "./components_js/footerSec";
 import Header from "./components_js/headerSec";
 import MainSection from "./components_js/introSec";
+import Loading from "./components_js/loading";
 import Navbar from "./components_js/navbar";
 import ProjectsSection from "./components_js/projectsSec";
 import SkillSection from "./components_js/skillSec";
+
+
+
+const loading = ReactDOM.createRoot(document.getElementById("loading"));
+loading.render(<Loading />);
 
 const navbar = ReactDOM.createRoot(document.getElementById("my-navbar"));
 navbar.render(<Navbar />);
@@ -34,6 +40,20 @@ footer.render(<FooterSection />)
 
 
 window.onscroll = () => myFunction();
+
+// chech if the window is loaded
+document.addEventListener('readystatechange',
+() => {
+    if (document.readyState === "complete") {
+        setTimeout(() =>{
+            document.getElementById("loading").style.display = "none" 
+            document.getElementById("header-image").classList.add("animate__animated", "animate__fadeInDown");
+            document.getElementById("header-text").classList.add("animate__animated", "animate__fadeInUp");
+        }
+        ,2500)
+    }
+}
+)
 
 function myFunction() {
     // navbar Animation
@@ -70,19 +90,18 @@ function myFunction() {
         document.getElementById("certification-2").classList.add("animate__animated", "animate__fadeInUp");
     }
 
-    // projects animations
-    if (document.documentElement.scrollTop > document.getElementById("projects").offsetTop - 350) {
-
-        document.getElementById("projects").classList.add("animate__animated", "animate__fadeIn");
-        for (let index = 1; index < 8; index++) {
-            if (index % 2 === 0) {
-                document.getElementById(`card${index}`).classList.add("animate__animated", "animate__fadeInUp")
-            } else {
-                document.getElementById(`card${index}`).classList.add("animate__animated", "animate__fadeInUp")
+    // // projects animations
+    Object.values(
+        document.getElementById("projects-container").childNodes
+    ).map(
+        (item) => {
+            if (document.documentElement.scrollTop > document.getElementById(`${item.attributes.id.nodeValue}`).offsetTop - 350) {
+                document.getElementById(`${item.attributes.id.nodeValue}`).classList.add("animate__animated", "animate__fadeInUp")
+                document.getElementById(`${item.attributes.id.nodeValue}`).style.opacity = "1";
             }
-
+            
         }
-    }
+    )
 
     if (document.documentElement.scrollTop > document.getElementById("skills").offsetTop - 550) {
         document.getElementById("skills-sec").className = "fadeIn";
