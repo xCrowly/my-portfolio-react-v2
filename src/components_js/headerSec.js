@@ -15,7 +15,7 @@ function Header() {
       <img
         id="header-image"
         className="header-image animate__animated animate__fadeInDown"
-        src={require("../assets/images/laptop.jpg")}
+        src={require("../assets/images/IMG_20230207_160156.png")}
         alt=""
       />
     </div>

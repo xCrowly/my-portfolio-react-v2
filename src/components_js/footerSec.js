@@ -145,7 +145,7 @@ function FooterSection() {
         </li>
         <li>
           <a
-            href="https://drive.google.com/file/d/13I1mPr8NEvXg21DOv9CscKBAv3cDeO9y/view?usp=sharing"
+            href="https://drive.google.com/file/d/1ow6rpPS62Dji--aRiYzqinEInFSAoVcK/view?usp=sharing"
             target={"_blank"}
             className="flex-row fw-bold fa-container
                       text-decoration-none"
