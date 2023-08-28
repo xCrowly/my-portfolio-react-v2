@@ -1,5 +1,7 @@
+import cert_Library from "../assets/images/FreeCodeCamp_FrontEnd_Libraries.png";
 import cert_javascript from "../assets/images/FreeCodeCamp_JavaScript_cert.png";
 import cert_resp from "../assets/images/FreeCodeCamp_Responsive_web_design.png";
+import cert_IELTS from "../assets/images/IELTS.jpg";
 
 function Certification() {
   return (
@@ -8,6 +10,32 @@ function Certification() {
         Certifications
       </h1>
       <div className="d-flex row justify-content-around align-items-center container m-auto">
+        <div id="certification-3" className="col-md-6 p-3">
+          <a
+            href="https://www.freecodecamp.org/certification/Crowly/front-end-development-libraries"
+            target={"_blank"}
+            rel="noreferrer"
+          >
+            <img
+              src={cert_Library}
+              className="certification-img w-100"
+              alt="Front end development library"
+            />
+          </a>
+        </div>
+        <div id="certification-4" className="col-md-6 p-3">
+          <a
+            href="https://drive.google.com/file/d/1IMw3Wfh7SRbGsNmATrr2jU--vsb6iUyS/view?usp=sharing"
+            target={"_blank"}
+            rel="noreferrer"
+          >
+            <img
+              src={cert_IELTS}
+              className="certification-img-IELTS w-100 IELTS-IMG"
+              alt="IELTS Certification"
+            />
+          </a>
+        </div>
         <div id="certification-1" className="col-md-6 p-3">
           <a
             href="https://www.freecodecamp.org/certification/Crowly/responsive-web-design"

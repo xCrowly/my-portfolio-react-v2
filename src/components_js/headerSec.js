@@ -14,7 +14,7 @@ function Header() {
       </div>
       <img
         id="header-image"
-        className="header-image "
+        className="header-image"
         src={require("../assets/images/IMG_20230207_160156.jpg")}
         alt=""
       />

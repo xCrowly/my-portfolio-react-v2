@@ -2,11 +2,14 @@
 
 @media (max-width: 768px) {
   .certification-img {
-    filter: saturate(1) blur(0) !important;
-
     &:hover {
       transform: scale(1.05) skew(2deg);
       filter: saturate(3) !important;
+    }
+  }
+  .certification-img-IELTS {
+    &:hover {
+      transform: scale(1.05) skew(2deg);
     }
   }
 }
@@ -17,7 +20,6 @@
 
 .certification-img {
   transition: all ease-out 0.15s;
-  filter: saturate(0) blur(0.8px);
   border-radius: 5px;
 
   &:hover {
@@ -45,4 +47,30 @@
   opacity: 0;
   transition: all ease-out 2s 1s;
   animation-delay: 0.3s;
+}
+#certification-3 {
+
+  transition: all ease-out 2s 1s;
+  animation-delay: 0.3s;
+  object-fit: cover;
+}
+#certification-4 {
+
+  transition: all ease-out 2s 1s;
+  animation-delay: 0.3s;
+  object-fit: cover;
+}
+
+.IELTS-IMG{
+  border: 2px solid #000000;
+}
+
+.certification-img-IELTS {
+  transition: all ease-out 0.15s;
+  
+  border-radius: 2px;
+
+  &:hover {
+    transform: scale(1.05) skew(2deg);
+  }
 }

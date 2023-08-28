@@ -11005,12 +11005,12 @@ textarea.form-control-lg {
 }
 
 @media (max-width: 768px) {
-  .certification-img {
-    filter: saturate(1) blur(0) !important;
-  }
   .certification-img:hover {
     transform: scale(1.05) skew(2deg);
     filter: saturate(3) !important;
+  }
+  .certification-img-IELTS:hover {
+    transform: scale(1.05) skew(2deg);
   }
 }
 .certification-sec {
@@ -11019,7 +11019,6 @@ textarea.form-control-lg {
 
 .certification-img {
   transition: all ease-out 0.15s;
-  filter: saturate(0) blur(0.8px);
   border-radius: 5px;
 }
 .certification-img:hover {
@@ -11046,6 +11045,30 @@ textarea.form-control-lg {
   opacity: 0;
   transition: all ease-out 2s 1s;
   animation-delay: 0.3s;
+}
+
+#certification-3 {
+  transition: all ease-out 2s 1s;
+  animation-delay: 0.3s;
+  object-fit: cover;
+}
+
+#certification-4 {
+  transition: all ease-out 2s 1s;
+  animation-delay: 0.3s;
+  object-fit: cover;
+}
+
+.IELTS-IMG {
+  border: 2px solid #000000;
+}
+
+.certification-img-IELTS {
+  transition: all ease-out 0.15s;
+  border-radius: 2px;
+}
+.certification-img-IELTS:hover {
+  transform: scale(1.05) skew(2deg);
 }
 
 #projects-sec {
