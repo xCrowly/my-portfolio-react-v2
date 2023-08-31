@@ -112,15 +112,21 @@ function myFunction() {
     document
       .getElementById("certification-title")
       .classList.add("animate__animated", "animate__fadeInDown");
-    document
+      document
       .getElementById("certification")
-      .classList.add("animate__animated", "animate__backInUp");
-    document
+      .classList.add("animate__animated", "animate__fadeInUp");
+      document
       .getElementById("certification-1")
       .classList.add("animate__animated", "animate__fadeInUp");
-    document
+      document
       .getElementById("certification-2")
       .classList.add("animate__animated", "animate__fadeInUp");
+      document
+      .getElementById("certification-3")
+      .classList.add("animate__animated", "animate__fadeInUp");
+      document
+        .getElementById("certification-4")
+        .classList.add("animate__animated", "animate__backInUp");
   }
 
   // // projects animations
