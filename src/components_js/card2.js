@@ -14,6 +14,10 @@ function Card2(props) {
       </div>
       <div className="col-md-6 p-0">
         <a href={props.link} target={"_blank"} rel="noreferrer">
+          <div className="tr"></div>
+          <div className="tl"></div>
+          <div className="br"></div>
+          <div className="bl"></div>
           <img src={props.image} className="card-image" alt={props.name} />
         </a>
       </div>

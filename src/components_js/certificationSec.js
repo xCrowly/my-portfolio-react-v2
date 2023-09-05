@@ -15,7 +15,12 @@ function Certification() {
             href="https://drive.google.com/file/d/1IMw3Wfh7SRbGsNmATrr2jU--vsb6iUyS/view?usp=sharing"
             target={"_blank"}
             rel="noreferrer"
+            id="IELTS-tr"
           >
+          <div className="tr"></div>
+          <div className="tl"></div>
+          <div className="br"></div>
+          <div className="bl"></div>
             <img
               src={cert_IELTS}
               className="certification-img-IELTS w-100 IELTS-IMG"
@@ -29,6 +34,10 @@ function Certification() {
             target={"_blank"}
             rel="noreferrer"
           >
+                      <div className="tr"></div>
+          <div className="tl"></div>
+          <div className="br"></div>
+          <div className="bl"></div>
             <img
               src={cert_Library}
               className="certification-img w-100"
@@ -42,6 +51,10 @@ function Certification() {
             target={"_blank"}
             rel="noreferrer"
           >
+                      <div className="tr"></div>
+          <div className="tl"></div>
+          <div className="br"></div>
+          <div className="bl"></div>
             <img
               src={cert_resp}
               className="certification-img w-100"
@@ -55,6 +68,10 @@ function Certification() {
             target={"_blank"}
             rel="noreferrer"
           >
+                      <div className="tr"></div>
+          <div className="tl"></div>
+          <div className="br"></div>
+          <div className="bl"></div>
             <img
               src={cert_javascript}
               className="certification-img w-100"

@@ -1,12 +1,12 @@
 @use "../custom";
 
 @media (max-width: 768px) {
-  .certification-img {
-    &:hover {
-      transform: scale(1.05) skew(2deg);
-      filter: saturate(3) !important;
-    }
-  }
+  // .certification-img {
+  //   &:hover {
+  //     transform: scale(1.05) skew(2deg);
+  //     filter: saturate(3) !important;
+  //   }
+  // }
   .certification-img-IELTS {
     &:hover {
       transform: scale(1.05) skew(2deg);
@@ -39,26 +39,30 @@
 
 #certification-1 {
   opacity: 0;
-  transition: all ease-out 2s 1s;
+  transition: all ease-out 0.2s;
+
   animation-delay: 0.3s;
 }
 
 #certification-2 {
   opacity: 0;
-  transition: all ease-out 2s 1s;
+  transition: all ease-out 0.2s;
+
   animation-delay: 0.3s;
 }
 
 #certification-3 {
   opacity: 0;
-  transition: all ease-out 2s 1s;
+  transition: all ease-out 0.2s;
+
   animation-delay: 0.3s;
   object-fit: cover;
 }
 
 #certification-4 {
   opacity: 0;
-  transition: all ease-out 2s 1s;
+  transition: all ease-out 0.2s;
+
   animation-delay: 0.3s;
   object-fit: cover;
 }
@@ -68,11 +72,75 @@
 }
 
 .certification-img-IELTS {
-  transition: all ease-out 0.15s;
-
+  transition: all ease-out 0.2s;
   border-radius: 2px;
+}
 
-  &:hover {
-    transform: scale(1.05) skew(2deg);
+// Table hover style animation
+.tr {
+  width: 50%;
+  height: 50%;
+  top: 0;
+  right: 0;
+  position: absolute;
+  z-index: 99;
+}
+
+// to apply transform on the next img element
+.tr:hover ~ img {
+  transform: rotateX(-5deg) rotateY(-30deg) scale(1.1);
+  box-shadow: -15px 15px 5px #00000075;
+}
+
+.tl {
+  width: 50%;
+  height: 50%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 99;
+}
+
+.tl:hover ~ img {
+  transform: rotateX(5deg) rotateY(-30deg) scale(1.1);
+  box-shadow: 15px 15px 5px #00000075;
+}
+
+.br {
+  width: 50%;
+  height: 50%;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 99;
+}
+
+.br:hover ~ img {
+  transform: rotateX(5deg) rotateY(-30deg) scale(1.1);
+  box-shadow: -15px -15px 5px #00000075;
+}
+
+.bl {
+  width: 50%;
+  height: 50%;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  z-index: 99;
+}
+
+.bl:hover ~ img {
+  transform: rotateX(-5deg) rotateY(-30deg) scale(1.1);
+  box-shadow: 15px -15px 5px #00000075;
+}
+
+@keyframes skewTR {
+  0% {
+    transform: rotateX(0) rotateY(0);
+    // transform: scale(1);
+  }
+  100% {
+    // transform: scale(1.2);
+    transform: rotateX(-20deg) rotateY(10deg);
   }
 }

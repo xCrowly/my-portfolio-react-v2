@@ -79,14 +79,14 @@ function myFunction() {
   }
 
   // header image animation
-  if (document.documentElement.scrollTop < 550) {
+  if (document.documentElement.scrollTop < 350) {
     document.getElementById("header-image").style.filter = `blur(${
       document.documentElement.scrollTop / 100
     }px)`;
   }
   if (
     document.documentElement.scrollTop <
-    document.documentElement.clientHeight * 2
+    document.documentElement.clientHeight * 3
   ) {
     document.getElementById("header-image").style.transform = `translateY(${
       1 - document.documentElement.scrollTop / 2
