@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+
 const styles = {
   backgroundColor: "var(--navbar)",
   backdropFilter: "blur(5px)",

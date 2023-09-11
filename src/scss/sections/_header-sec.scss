@@ -97,3 +97,28 @@
     transform: scale(1) rotateZ(0) skewX(0);
   }
 }
+
+.header-text-glow {
+  
+  animation: textGlow 8s linear infinite;
+  text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.8);
+}
+
+@keyframes textGlow {
+  0%,53%,60%,76%,85%,97%
+  {
+    color: #F0F0F0;
+    text-shadow: none;
+  }
+  53.1%,59%,77%,84.9%,93%,100%
+  {
+    color: #ff0000;
+    text-shadow: 
+    0px 0px 5px #ffffff,
+    0px 0px 10px #ffffff,
+    0px 0px 12px #ffffff,
+    0px 0px 15px #ffffff,
+    0px 0px 20px #ffffff,
+    0px 0px 25px #ffffff;
+  }
+}

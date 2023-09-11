@@ -6,7 +6,7 @@ function Header() {
       <div className="container">
         <h1 id="header-text" className="header-text">
           <i>
-            <b>Hi there!,</b>
+            <b className="header-text-glow">Hi there!,</b>
           </i>
           <br />
           welcome to my website.

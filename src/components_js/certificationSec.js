@@ -34,7 +34,7 @@ function Certification() {
             target={"_blank"}
             rel="noreferrer"
           >
-                      <div className="tr"></div>
+          <div className="tr"></div>
           <div className="tl"></div>
           <div className="br"></div>
           <div className="bl"></div>
@@ -51,7 +51,7 @@ function Certification() {
             target={"_blank"}
             rel="noreferrer"
           >
-                      <div className="tr"></div>
+          <div className="tr"></div>
           <div className="tl"></div>
           <div className="br"></div>
           <div className="bl"></div>
@@ -68,7 +68,7 @@ function Certification() {
             target={"_blank"}
             rel="noreferrer"
           >
-                      <div className="tr"></div>
+          <div className="tr"></div>
           <div className="tl"></div>
           <div className="br"></div>
           <div className="bl"></div>

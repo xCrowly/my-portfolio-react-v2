@@ -38,19 +38,24 @@ function FooterSection() {
     );
   }
 
-  function removeToast() {
-    setToast((r) => (r = undefined));
-  }
+  // function removeToast() {
+  //   setToast((r) => (r = undefined));
+  // }
 
   function copyText() {
     navigator.clipboard.writeText("badawy.ca@gmail.com");
+    window.setTimeout(
+      () => alert("Email address has been copied successfully!"),
+      200
+    );
   }
+
   // timer for lateInit
-  function toastCountDown() {
-    copyText();
-    window.setTimeout(() => triggerToast(), 100);
-    window.setTimeout(() => removeToast(), 4000);
-  }
+  // function toastCountDown() {
+  //   copyText();
+  //   window.setTimeout(() => triggerToast(), 100);
+  //   window.setTimeout(() => removeToast(), 4000);
+  // }
 
   return (
     <footer id="footer-sec" className="footer-sec ">
@@ -131,7 +136,7 @@ function FooterSection() {
       <ul className="footer-item flex-colomn">
         <li>
           <div
-            onClick={toastCountDown}
+            onClick={() => copyText()}
             className="flex-row fw-bold fa-container
                       text-decoration-none"
             rel="noreferrer"
