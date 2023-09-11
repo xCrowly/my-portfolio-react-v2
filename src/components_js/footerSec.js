@@ -4,39 +4,39 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
 function FooterSection() {
-  const [toast, setToast] = React.useState("");
+  // const [toast, setToast] = React.useState("");
 
-  // to add the toast element to the scene
-  function triggerToast() {
-    setToast(
-      (t) =>
-        (t = (
-          <div
-            className="toast fade show toast-welcome zoomIn"
-            role="alert"
-            aria-live="assertive"
-            aria-atomic="true"
-          >
-            <div
-              className="toast-header"
-              style={{ backgroundColor: "var(--bs-primary)", color: "#FFFFFF" }}
-            >
-              <strong className="me-auto">Ahmed Badawy</strong>
-              <button
-                type="button"
-                className="btn-close"
-                data-bs-dismiss="toast"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div className="toast-body bg-secondary rounded-bottom">
-              <strong style={{ color: "var(--steelblue)" }}>Copied </strong>
-              Successfully
-            </div>
-          </div>
-        ))
-    );
-  }
+  // // to add the toast element to the scene
+  // // function triggerToast() {
+  // //   setToast(
+  // //     (t) =>
+  // //       (t = (
+  // //         <div
+  // //           className="toast fade show toast-welcome zoomIn"
+  // //           role="alert"
+  // //           aria-live="assertive"
+  // //           aria-atomic="true"
+  // //         >
+  // //           <div
+  // //             className="toast-header"
+  // //             style={{ backgroundColor: "var(--bs-primary)", color: "#FFFFFF" }}
+  // //           >
+  // //             <strong className="me-auto">Ahmed Badawy</strong>
+  // //             <button
+  // //               type="button"
+  // //               className="btn-close"
+  // //               data-bs-dismiss="toast"
+  // //               aria-label="Close"
+  // //             ></button>
+  // //           </div>
+  // //           <div className="toast-body bg-secondary rounded-bottom">
+  // //             <strong style={{ color: "var(--steelblue)" }}>Copied </strong>
+  // //             Successfully
+  // //           </div>
+  // //         </div>
+  // //       ))
+  // //   );
+  // // }
 
   // function removeToast() {
   //   setToast((r) => (r = undefined));
