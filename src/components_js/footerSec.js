@@ -63,7 +63,7 @@ function FooterSection() {
         <li className="flex-row text-danger fw-bold">
           <h1 className="fw-bold h1-bottom">Ahmed Badawy</h1>
         </li>
-        {toast}
+        {/* {toast} */}
       </ul>
 
       <ul className="footer-item flex-colomn">
