@@ -9,7 +9,7 @@ function ProjectsSection() {
   return (
     <div
       id="projects-sec"
-      className="p-5 w-100 align-items-center justify-content-center"
+      className="p-md-5 p-3 w-100 align-items-center justify-content-center"
     >
       {/* mapping in card Json file to render elements */}
       <div id="projects-container" className="container">

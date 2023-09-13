@@ -10,6 +10,7 @@ body {
   --projects: #dadbeb;
   --card: #dadbeb;
   --intro: #dadbeb;
+  --intro-bg: #ffffff;
   --certification: #dadbeb;
   --skills: #dadbeb;
   --navbar: #33415560;
@@ -10996,11 +10997,11 @@ textarea.form-control-lg {
 }
 
 @keyframes textGlow {
-  0%, 53%, 60%, 76%, 85%, 97% {
+  0%, 53.3%, 60%, 76%, 85%, 97% {
     color: #F0F0F0;
     text-shadow: none;
   }
-  53.1%, 59%, 77%, 84.9%, 93%, 100% {
+  53.1%, 59%, 77%, 84.9%, 93%, 99%, 100% {
     color: #ff0000;
     text-shadow: 0px 0px 5px #ffffff, 0px 0px 10px #ffffff, 0px 0px 12px #ffffff, 0px 0px 15px #ffffff, 0px 0px 20px #ffffff, 0px 0px 25px #ffffff;
   }
@@ -11019,7 +11020,7 @@ textarea.form-control-lg {
 }
 
 #main-sec {
-  background-color: var(--certification);
+  background-color: var(--intro-bg);
   border: 1px solid var(--navbar);
   z-index: 5 !important;
 }
@@ -11037,10 +11038,6 @@ textarea.form-control-lg {
   transition: all ease-out 0.15s;
   border-radius: 5px;
 }
-.certification-img:hover {
-  transform: scale(1.05) skew(2deg);
-  filter: saturate(3) blur(0);
-}
 
 #certification {
   opacity: 0;
@@ -11054,39 +11051,41 @@ textarea.form-control-lg {
 #certification-1 {
   opacity: 0;
   display: none;
-  transition: all ease-out 0.2s;
-  animation-delay: 0.3s;
+  transition: all ease-out 0.3s;
+  object-fit: cover;
 }
 
 #certification-2 {
   opacity: 0;
   display: none;
-  transition: all ease-out 0.2s;
-  animation-delay: 0.3s;
+  transition: all ease-out 0.3s;
+  object-fit: cover;
 }
 
 #certification-3 {
   opacity: 0;
   display: none;
-  transition: all ease-out 0.2s;
-  animation-delay: 0.3s;
+  transition: all ease-out 0.3s;
   object-fit: cover;
 }
 
 #certification-4 {
   opacity: 0;
   display: none;
-  transition: all ease-out 0.2s;
-  animation-delay: 0.3s;
+  animation-delay: 0s;
   object-fit: cover;
 }
 
-.IELTS-IMG {
-  border: 2px solid #000000;
+#certification-5 {
+  opacity: 0;
+  display: none;
+  transition: all ease-out 0.3s;
+  object-fit: cover;
 }
 
 .certification-img-IELTS {
   transition: all ease-out 0.2s;
+  border: 2px solid #000000;
   border-radius: 2px;
 }
 
@@ -11100,7 +11099,7 @@ textarea.form-control-lg {
 }
 
 .tr:hover ~ img {
-  transform: rotateX(5deg) rotateY(10deg) scale(1.1);
+  transform: rotateX(5deg) rotateY(10deg) scale(1.05);
   box-shadow: -15px 15px 5px rgba(0, 0, 0, 0.4588235294);
 }
 
@@ -11114,7 +11113,7 @@ textarea.form-control-lg {
 }
 
 .tl:hover ~ img {
-  transform: rotateX(5deg) rotateY(-10deg) scale(1.1);
+  transform: rotateX(5deg) rotateY(-10deg) scale(1.05);
   box-shadow: 15px 15px 5px rgba(0, 0, 0, 0.4588235294);
 }
 
@@ -11128,7 +11127,7 @@ textarea.form-control-lg {
 }
 
 .br:hover ~ img {
-  transform: rotateX(-5deg) rotateY(10deg) scale(1.1);
+  transform: rotateX(-5deg) rotateY(10deg) scale(1.05);
   box-shadow: -15px -15px 5px rgba(0, 0, 0, 0.4588235294);
 }
 
@@ -11142,18 +11141,10 @@ textarea.form-control-lg {
 }
 
 .bl:hover ~ img {
-  transform: rotateX(-5deg) rotateY(-10deg) scale(1.1);
+  transform: rotateX(-5deg) rotateY(-10deg) scale(1.05);
   box-shadow: 15px -15px 5px rgba(0, 0, 0, 0.4588235294);
 }
 
-@keyframes skewTR {
-  0% {
-    transform: rotateX(0) rotateY(0);
-  }
-  100% {
-    transform: rotateX(-20deg) rotateY(10deg);
-  }
-}
 #projects-sec {
   background-color: var(--projects) !important;
 }

@@ -86,10 +86,10 @@ function myFunction() {
   }
   if (
     document.documentElement.scrollTop <
-    document.documentElement.clientHeight * 3
+    document.documentElement.clientHeight * 4
   ) {
     document.getElementById("header-image").style.transform = `translateY(${
-      1 - document.documentElement.scrollTop / 2
+      1 - document.documentElement.scrollTop / 2.5
     }px)`;
   }
 
@@ -134,6 +134,10 @@ function myFunction() {
     document.getElementById("certification-4").style.display = `block`;
     document
       .getElementById("certification-4")
+      .classList.add("animate__animated", "animate__fadeInUp");
+    document.getElementById("certification-5").style.display = `block`;
+    document
+      .getElementById("certification-5")
       .classList.add("animate__animated", "animate__fadeInUp");
   }
 

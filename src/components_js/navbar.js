@@ -17,6 +17,7 @@ function returnDark(s) {
   s.style.setProperty("--projects", "#242a3f");
   s.style.setProperty("--card", "#303955");
   s.style.setProperty("--intro", "#242a3f");
+  s.style.setProperty("--intro-bg", "#242a3f");
   s.style.setProperty("--certification", "#303955");
   s.style.setProperty("--skills", "#303955");
   s.style.setProperty("--navbar", "#F0F0F0");
@@ -33,6 +34,7 @@ function returnLight(s) {
   s.style.setProperty("--projects", "#FFFFFF");
   s.style.setProperty("--card", "#dadbeb");
   s.style.setProperty("--intro", "#FFFFFF");
+  s.style.setProperty("--intro-bg", "#ffffff");
   s.style.setProperty("--certification", "#dadbeb");
   s.style.setProperty("--skills", "#dadbeb");
   s.style.setProperty("--navbar", "#3C486B");

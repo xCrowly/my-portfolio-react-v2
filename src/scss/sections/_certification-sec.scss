@@ -21,11 +21,6 @@
 .certification-img {
   transition: all ease-out 0.15s;
   border-radius: 5px;
-
-  &:hover {
-    transform: scale(1.05) skew(2deg);
-    filter: saturate(3) blur(0);
-  }
 }
 
 #certification {
@@ -40,46 +35,41 @@
 #certification-1 {
   opacity: 0;
   display: none;
-  transition: all ease-out 0.2s;
-
-  animation-delay: 0.3s;
+  transition: all ease-out 0.3s;
+  object-fit: cover;
 }
 
 #certification-2 {
   opacity: 0;
   display: none;
-
-  transition: all ease-out 0.2s;
-
-  animation-delay: 0.3s;
+  transition: all ease-out 0.3s;
+  object-fit: cover;
 }
 
 #certification-3 {
   opacity: 0;
   display: none;
-
-  transition: all ease-out 0.2s;
-
-  animation-delay: 0.3s;
+  transition: all ease-out 0.3s;
   object-fit: cover;
 }
 
 #certification-4 {
   opacity: 0;
   display: none;
-
-  transition: all ease-out 0.2s;
-
-  animation-delay: 0.3s;
+  animation-delay: 0s;
   object-fit: cover;
 }
 
-.IELTS-IMG {
-  border: 2px solid #000000;
+#certification-5 {
+  opacity: 0;
+  display: none;
+  transition: all ease-out 0.3s;
+  object-fit: cover;
 }
 
 .certification-img-IELTS {
   transition: all ease-out 0.2s;
+  border: 2px solid #000000;
   border-radius: 2px;
 }
 
@@ -95,7 +85,7 @@
 
 // to apply transform on the next img element
 .tr:hover ~ img {
-  transform: rotateX(5deg) rotateY(10deg) scale(1.1);
+  transform: rotateX(5deg) rotateY(10deg) scale(1.05);
   box-shadow: -15px 15px 5px #00000075;
 }
 
@@ -109,7 +99,7 @@
 }
 
 .tl:hover ~ img {
-  transform: rotateX(5deg) rotateY(-10deg) scale(1.1);
+  transform: rotateX(5deg) rotateY(-10deg) scale(1.05);
   box-shadow: 15px 15px 5px #00000075;
 }
 
@@ -123,7 +113,7 @@
 }
 
 .br:hover ~ img {
-  transform: rotateX(-5deg) rotateY(10deg) scale(1.1);
+  transform: rotateX(-5deg) rotateY(10deg) scale(1.05);
   box-shadow: -15px -15px 5px #00000075;
 }
 
@@ -137,17 +127,17 @@
 }
 
 .bl:hover ~ img {
-  transform: rotateX(-5deg) rotateY(-10deg) scale(1.1);
+  transform: rotateX(-5deg) rotateY(-10deg) scale(1.05);
   box-shadow: 15px -15px 5px #00000075;
 }
 
-@keyframes skewTR {
-  0% {
-    transform: rotateX(0) rotateY(0);
-    // transform: scale(1);
-  }
-  100% {
-    // transform: scale(1.2);
-    transform: rotateX(-20deg) rotateY(10deg);
-  }
-}
+// @keyframes skewTR {
+//   0% {
+//     transform: rotateX(0) rotateY(0);
+//     // transform: scale(1);
+//   }
+//   100% {
+//     // transform: scale(1.2);
+//     transform: rotateX(-20deg) rotateY(10deg);
+//   }
+// }
