@@ -26,16 +26,16 @@
                 "description": "Digital clock for the current time. Designed by: Html, css and javascript"
             },
             {
-                "name": "Resume",
-                "link": "https://my-resume-10.netlify.app/",
-                "image": "Resume.png",
-                "description": "Resume which was just for practicing. Designed by: Html, css, javascript, Sass, FontAwesome and Bootstrap"
-            },
-            {
                 "name": "Calculator",
                 "link": "https://xcrowly.github.io/Calculator/",
                 "image": "Calculator.png",
                 "description": "A great app to practice JavaScript. Designed by: Html, css and javascript"
+            },
+            {
+                "name": "Resume",
+                "link": "https://my-resume-10.netlify.app/",
+                "image": "Resume.png",
+                "description": "Resume which was just for practicing. Designed by: Html, css, javascript, Sass, FontAwesome and Bootstrap"
             },
             {
                 "name": "Todo list",

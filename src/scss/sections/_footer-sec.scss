@@ -1,71 +1,63 @@
-@use '../custom';
+@use "../custom";
 
 @media (max-width: 576px) {
-    .note {
-        font-size: 12px !important;
-    }
+  .note {
+    font-size: 12px !important;
+  }
 
-    .footer-item {
-        min-width: 60vw !important;
-        text-align: center;
-        color: white !important;
-
-    }
+  .footer-item {
+    min-width: 60vw !important;
+    text-align: center;
+    color: white !important;
+  }
 }
 
 #footer-sec {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    min-height: 40vh;
-    background-color: var(--footer);
-    z-index: 10;
-    padding: 30px;
-    color: white !important;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  min-height: 40vh;
+  background-color: var(--footer);
+  z-index: 10;
+  color: white !important;
 
-    & ul {
-        list-style: none;
-        padding-left: 0;
-    }
-}
-
-.h1-bottom:hover {
-    animation: flip;
-    animation-duration: 1s;
+  & ul {
+    list-style: none;
+    padding-left: 0;
+  }
 }
 
 .footer-item {
-    margin: 0 auto;
-    padding: auto;
-    min-width: 25vw;
-    color: white !important;
-
+  margin: 0 auto;
+  padding: auto;
+  width: min-content;
+  color: white !important;
 }
 
-// fontAwesome icon styling
-.fa-icon {
-    width: 35px;
-    margin: 0 10px 10px 0;
+.item-hover{
+    font-size: xx-large;
+    transition: all ease-in-out .2s;
 }
 
-.fa-container:hover {
-    cursor: pointer;
+.item-hover:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 .note {
-    position: absolute;
-    left: 10px;
-    bottom: 0;
-    margin: 0;
-    font-size: 15px;
-    font-weight: 300;
-    color: #FFF5EE;
+  position: absolute;
+  left: 10px;
+  bottom: 0;
+  margin: 0;
+  font-size: 15px;
+  font-weight: 300;
+  color: #fff5ee;
 }
 
 .toast-welcome {
-    position: fixed;
-    top: 90px;
-    left: 20px;
+  position: fixed;
+  top: 90px;
+  left: 20px;
 }

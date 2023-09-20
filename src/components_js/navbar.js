@@ -1,45 +1,47 @@
 import React, { useState } from "react";
 
-
 const styles = {
   backgroundColor: "var(--navbar)",
   backdropFilter: "blur(5px)",
   color: "var(--bs-primary)",
 };
 
+// dark mode colors
 function returnDark(s) {
-  s.style.setProperty("--bs-primary", "#3C486B");
+  s.style.setProperty("--bs-primary", "#1E2022");
   s.style.setProperty("--bs-secondary", "#FFF5EE");
   s.style.setProperty("--bs-body-color", "#F0F0F0");
-  s.style.setProperty("--bs-body-bg", "#3C486B");
-  s.style.setProperty("--footer", "#242a3f");
+  s.style.setProperty("--bs-body-bg", "#1E2022");
+  s.style.setProperty("--footer", "#111111");
   s.style.setProperty("--header", "#F0F0F0");
-  s.style.setProperty("--projects", "#242a3f");
-  s.style.setProperty("--card", "#303955");
-  s.style.setProperty("--intro", "#242a3f");
-  s.style.setProperty("--intro-bg", "#242a3f");
-  s.style.setProperty("--certification", "#303955");
-  s.style.setProperty("--skills", "#303955");
+  s.style.setProperty("--projects", "#52616B");
+  s.style.setProperty("--card", "#1E2022");
+  s.style.setProperty("--intro", "#52616B");
+  s.style.setProperty("--intro-bg", "#52616B");
+  s.style.setProperty("--certification", "#1E2022");
+  s.style.setProperty("--skills", "#1E2022");
   s.style.setProperty("--navbar", "#F0F0F0");
   s.style.setProperty("--dark-toggle", "#F45050");
   s.style.setProperty("--dark-toggle-hover", "#FFF5EE80");
+  s.style.setProperty("--header-text-glow", "#F45050");
 }
 function returnLight(s) {
   s.style.setProperty("--bs-primary", "#F0F0F0");
   s.style.setProperty("--bs-secondary", "#334155");
-  s.style.setProperty("--bs-body-color", "#3C486B");
+  s.style.setProperty("--bs-body-color", "#01579B");
   s.style.setProperty("--bs-body-bg", "#F0F0F0");
-  s.style.setProperty("--footer", "#3C486B");
+  s.style.setProperty("--footer", "#01579B");
   s.style.setProperty("--header", "#F0F0F0");
   s.style.setProperty("--projects", "#FFFFFF");
-  s.style.setProperty("--card", "#dadbeb");
+  s.style.setProperty("--card", "#E3F2FD");
   s.style.setProperty("--intro", "#FFFFFF");
   s.style.setProperty("--intro-bg", "#ffffff");
-  s.style.setProperty("--certification", "#dadbeb");
-  s.style.setProperty("--skills", "#dadbeb");
-  s.style.setProperty("--navbar", "#3C486B");
+  s.style.setProperty("--certification", "#E3F2FD");
+  s.style.setProperty("--skills", "#E3F2FD");
+  s.style.setProperty("--navbar", "#01579B");
   s.style.setProperty("--dark-toggle", "#F45050");
   s.style.setProperty("--dark-toggle-hover", "#38434F80");
+  s.style.setProperty("--header-text-glow", "#01579B");
 }
 
 function Navbar() {

@@ -79,15 +79,13 @@ function myFunction() {
   }
 
   // header image animation
-  if (document.documentElement.scrollTop < 350) {
-    document.getElementById("header-image").style.filter = `blur(${
-      document.documentElement.scrollTop / 100
-    }px)`;
-  }
   if (
     document.documentElement.scrollTop <
     document.documentElement.clientHeight * 4
   ) {
+    document.getElementById("header-image").style.filter = `saturate(${
+      1 - document.documentElement.scrollTop / 500
+    })`;
     document.getElementById("header-image").style.transform = `translateY(${
       1 - document.documentElement.scrollTop / 2.5
     }px)`;
@@ -114,7 +112,7 @@ function myFunction() {
       .classList.add("animate__animated", "animate__fadeInDown");
     document
       .getElementById("certification")
-      .classList.add("animate__animated", "animate__fadeInUp");
+      .classList.add("animate__animated", "animate__pulse");
 
     document.getElementById("certification-1").style.display = `block`;
     document
@@ -164,7 +162,8 @@ function myFunction() {
     document.documentElement.scrollTop >
     document.getElementById("skills").offsetTop - 550
   ) {
-    document.getElementById("skills-sec").className = "fadeIn";
-    document.getElementById("skills-sec").style.opacity = "1";
+    document
+      .getElementById("skills-sec")
+      .classList.add("animate__animated", "animate__pulse");
   }
 }

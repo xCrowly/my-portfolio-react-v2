@@ -1,44 +1,35 @@
 @use "../custom";
 
 #skills-sec {
-  display: flex;
-  flex-wrap: wrap;
   min-height: 100vh;
-  padding: 60px 30px;
+  padding: 60px 30px 0 30px;
   z-index: 10 !important;
   background-color: var(--skills);
-
-  & p {
-    width: 100%;
-    justify-content: center;
-    font-size: 40px;
-    font-weight: 700;
-    margin-top: 40px;
-  }
-
-  & div {
-    display: flex;
-    justify-items: center;
-    width: auto;
-    height: auto;
-    margin: 30px auto;
-  }
 }
 
 .skill-item {
   display: flex;
+  background: var(--projects);
+  width: 100%;
   align-items: center;
-  justify-content: flex-start !important;
-  height: 70px !important;
-  margin-left: 0 !important;
-  z-index: 6;
+  justify-content: center;
 }
 
-// icon styling
-.fa-icon-skill {
-  height: 65px;
+.skills-column {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
   width: 100%;
-  margin-right: 35px;
+  height: 70vh;
+}
+
+.skills-text {
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  margin-top: 40px;
 }
 
 .zIndex {

@@ -1,9 +1,9 @@
-$primary: #3c486b;
-$info: #0d6efd;
+$primary: #1E2022;
+$info: #1E2022;
 $warning: #f9d949;
 $danger: #f45050;
 $body-color: #f0f0f0;
-$body-bg: #3c486b;
+$body-bg: #1E2022;
 $light: #f0f0f0;
 $dark: #0d0f17;
 
@@ -13,8 +13,8 @@ body {
 }
 
 :root {
-  --footer: #1e293b;
-  --header: #1e293b;
+  --footer: #111111;
+  --header: #111111;
   --projects: #dadbeb;
   --card: #dadbeb;
   --intro: #dadbeb;
@@ -24,6 +24,7 @@ body {
   --navbar: #33415560;
   --dark-toggle: #fff5ee;
   --dark-toggle-hover: #fff5ee80;
+  --header-text-glow: #1363DF;
 }
 
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
