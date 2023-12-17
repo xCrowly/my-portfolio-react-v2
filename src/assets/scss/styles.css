@@ -10904,7 +10904,7 @@ textarea.form-control-lg {
   left: 20px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 576px) {
   .header-text {
     font-size: 6.25vh !important;
     margin: 35px !important;
@@ -10930,7 +10930,7 @@ textarea.form-control-lg {
 .header-text {
   position: absolute;
   z-index: 1 !important;
-  font-size: 8.3333333333vw;
+  font-size: 8.3333333333vh;
   font-weight: normal;
   color: #f0f0f0;
   bottom: 0;
@@ -11167,6 +11167,7 @@ textarea.form-control-lg {
   color: var(--navbar);
   opacity: 0;
   margin: 15px 0;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2509803922);
 }
 
 .card-btn {

@@ -50,24 +50,24 @@ function Navbar() {
   var getRoot = document.querySelector(":root");
   function set_dark() {
     setDarkMode((darkMode) => {
-      if (darkMode === "true" || darkMode === "null") {
-        returnLight(getRoot);
-        localStorage.setItem("themeMode", "false");
-        return (darkMode = localStorage.getItem("themeMode"));
-      } else {
+      if (darkMode === "false" || darkMode === "null") {
         returnDark(getRoot);
         localStorage.setItem("themeMode", "true");
+        return (darkMode = localStorage.getItem("themeMode"));
+      } else {
+        returnLight(getRoot);
+        localStorage.setItem("themeMode", "false");
         return (darkMode = localStorage.getItem("themeMode"));
       }
     });
   }
 
   function checkDarkMode(darkMode) {
-    if (darkMode === "true" || darkMode === "null") {
-      returnLight(getRoot);
+    if (darkMode === "false" || darkMode === "null") {
+      returnDark(getRoot);
       return;
     } else {
-      returnDark(getRoot);
+      returnLight(getRoot);
       return;
     }
   }
@@ -82,11 +82,11 @@ function Navbar() {
       >
         <div className="container">
           <a
-            className="navbar-brand fw-bolder nav-item-name"
+            className="navbar-brand fw-bolder nav-item-name "
             style={{ color: "var(--body-color)" }}
             href="#img-header"
           >
-            Ahmed Badawy
+            AHMED BADAWY
           </a>
 
           <button

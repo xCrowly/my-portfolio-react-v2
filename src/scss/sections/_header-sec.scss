@@ -1,6 +1,6 @@
 @use "../custom";
 
-@media (max-width: 768px) {
+@media (max-width: 576px) {
   .header-text {
     font-size: calc(100vh / 16) !important;
     margin: 35px !important;
@@ -27,7 +27,7 @@
 .header-text {
   position: absolute;
   z-index: 1 !important;
-  font-size: calc(100vw / 12);
+  font-size: calc(100vh / 12);
   font-weight: normal;
   color: #f0f0f0;
   bottom: 0;

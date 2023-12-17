@@ -8,7 +8,7 @@ function Certification() {
   return (
     <div className="certification-sec p-md-5 pt-4">
       <h1 id="certification-title" className="text-center fw-bold pt-md-3 pt-5">
-        Certifications
+        CERTIFICATIONS
       </h1>
       <div className="d-flex row justify-content-around align-items-center container m-auto">
         <div id="certification-4" className="col-md-6 p-2">

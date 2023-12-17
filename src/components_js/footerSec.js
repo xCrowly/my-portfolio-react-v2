@@ -62,7 +62,7 @@ function FooterSection() {
       <ul className=" flex-colomn p-2 my-5">
         <li className="flex-row text-danger fw-bold">
           <a href="#img-header" className="text-decoration-none ">
-            <p className="fw-bold fs-1 text-danger item-hover">Ahmed Badawy</p>
+            <p className="fw-bold fs-1 text-danger item-hover">AHMED BADAWY</p>
           </a>
         </li>
         {/* {toast} */}
@@ -122,7 +122,7 @@ function FooterSection() {
         </li>
         <li>
           <a
-            href="https://drive.google.com/file/d/19uttIu2-FLT4t2MXszMy5xXQs_v68qXZ/view?usp=sharing"
+            href="https://drive.google.com/file/d/1qot0IL_DSyxshDmXSFPT-3YBgEXPOjAO/view?usp=sharing"
             target={"_blank"}
             className="flex-row fw-bold fa-container
                       text-decoration-none"

@@ -92,52 +92,89 @@ function myFunction() {
   }
 
   // intro text animation
-  if (
-    document.documentElement.scrollTop >
-    document.getElementById("main").offsetTop - 550
-  ) {
-    document
-      .getElementById("intro-container")
-      .classList.add("animate__animated", "animate__bounceInDown");
-    document.getElementById("intro-container").style.opacity = `1`;
+  function mainObserver() {
+    // Target the element
+    let element = document.getElementById("main");
+
+    // Set up the Intersection Observer
+    let observer = new IntersectionObserver(
+      function (entries, observer) {
+        entries.forEach(function (entry) {
+          // If the target element is in view
+          if (entry.isIntersecting) {
+            document
+              .getElementById("intro-container")
+              .classList.add("animate__animated", "animate__bounceInDown");
+            document.getElementById("intro-container").style.opacity = `1`;
+
+            // Stop observing once the effect is applied (optional)
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.8 }
+    ); // Adjust the threshold as needed
+
+    // observing the target element
+    observer.observe(element);
   }
+  mainObserver();
 
   // certification items animation
-  if (
-    document.documentElement.scrollTop >
-    document.getElementById("certification").offsetTop - 550
-  ) {
-    document
-      .getElementById("certification-title")
-      .classList.add("animate__animated", "animate__fadeInDown");
-    document
-      .getElementById("certification")
-      .classList.add("animate__animated", "animate__pulse");
+  function projectsObserver() {
+    // Target the element
+    let element2 = document.getElementById("certification-title");
 
-    document.getElementById("certification-1").style.display = `block`;
-    document
-      .getElementById("certification-1")
-      .classList.add("animate__animated", "animate__fadeInUp");
+    // Set up the Intersection Observer
+    let observer = new IntersectionObserver(
+      function (entries, observer) {
+        entries.forEach(function (entry) {
+          // If the target element is in view
+          if (entry.isIntersecting) {
+            console.log(entries, observer);
+            // Apply the desired effect (e.g., remove the 'hidden' class)
+            document
+              .getElementById("certification-title")
+              .classList.add("animate__animated", "animate__fadeInDown");
+            document
+              .getElementById("certification")
+              .classList.add("animate__animated", "animate__pulse");
 
-    document.getElementById("certification-2").style.display = `block`;
-    document
-      .getElementById("certification-2")
-      .classList.add("animate__animated", "animate__fadeInUp");
+            document.getElementById("certification-1").style.display = `block`;
+            document
+              .getElementById("certification-1")
+              .classList.add("animate__animated", "animate__fadeInUp");
 
-    document.getElementById("certification-3").style.display = `block`;
-    document
-      .getElementById("certification-3")
-      .classList.add("animate__animated", "animate__fadeInUp");
+            document.getElementById("certification-2").style.display = `block`;
+            document
+              .getElementById("certification-2")
+              .classList.add("animate__animated", "animate__fadeInUp");
 
-    document.getElementById("certification-4").style.display = `block`;
-    document
-      .getElementById("certification-4")
-      .classList.add("animate__animated", "animate__fadeInUp");
-    document.getElementById("certification-5").style.display = `block`;
-    document
-      .getElementById("certification-5")
-      .classList.add("animate__animated", "animate__fadeInUp");
+            document.getElementById("certification-3").style.display = `block`;
+            document
+              .getElementById("certification-3")
+              .classList.add("animate__animated", "animate__fadeInUp");
+
+            document.getElementById("certification-4").style.display = `block`;
+            document
+              .getElementById("certification-4")
+              .classList.add("animate__animated", "animate__fadeInUp");
+            document.getElementById("certification-5").style.display = `block`;
+            document
+              .getElementById("certification-5")
+              .classList.add("animate__animated", "animate__fadeInUp");
+            // Stop observing once the effect is applied (optional)
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.8 }
+    ); // Adjust the threshold as needed
+
+    // Start observing the target element
+    observer.observe(element2);
   }
+  projectsObserver();
 
   // // projects animations
   Object.values(document.getElementById("projects-container").childNodes).map(
