@@ -45,22 +45,24 @@ function returnLight(s) {
 }
 
 function Navbar() {
+  // eslint-disable-next-line no-unused-vars
   const [darkMode, setDarkMode] = useState(localStorage.getItem("themeMode"));
 
   var getRoot = document.querySelector(":root");
-  function set_dark() {
-    setDarkMode((darkMode) => {
-      if (darkMode === "false" || darkMode === "null") {
-        returnDark(getRoot);
-        localStorage.setItem("themeMode", "true");
-        return (darkMode = localStorage.getItem("themeMode"));
-      } else {
-        returnLight(getRoot);
-        localStorage.setItem("themeMode", "false");
-        return (darkMode = localStorage.getItem("themeMode"));
-      }
-    });
-  }
+
+  // function set_dark() {
+  //   setDarkMode((darkMode) => {
+  //     if (darkMode === "false" || darkMode === "null") {
+  //       returnDark(getRoot);
+  //       localStorage.setItem("themeMode", "true");
+  //       return (darkMode = localStorage.getItem("themeMode"));
+  //     } else {
+  //       returnLight(getRoot);
+  //       localStorage.setItem("themeMode", "false");
+  //       return (darkMode = localStorage.getItem("themeMode"));
+  //     }
+  //   });
+  // }
 
   function checkDarkMode(darkMode) {
     if (darkMode === "false" || darkMode === "null") {
