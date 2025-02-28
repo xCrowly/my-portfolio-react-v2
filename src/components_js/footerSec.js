@@ -50,6 +50,14 @@ function FooterSection() {
     );
   }
 
+  function copyNumber() {
+    navigator.clipboard.writeText("+393928097565");
+    window.setTimeout(
+      () => alert("Number has been copied successfully!"),
+      200
+    );
+  }
+
   // timer for lateInit
   // function toastCountDown() {
   //   copyText();
@@ -122,7 +130,7 @@ function FooterSection() {
         </li>
         <li>
           <a
-            href="https://drive.google.com/file/d/1qot0IL_DSyxshDmXSFPT-3YBgEXPOjAO/view?usp=sharing"
+            href="https://drive.google.com/file/d/1PK71-hGAm0RgsdWJlFYfVPs8Zn8siB9m/view?usp=sharing"
             target={"_blank"}
             className="flex-row fw-bold fa-container
                       text-decoration-none"
@@ -132,6 +140,18 @@ function FooterSection() {
               Resume
             </p>
           </a>
+        </li>
+        <li>
+          <div
+            onClick={() => copyNumber()}
+            className="flex-row fw-bold fa-container
+                      text-decoration-none"
+            rel="noreferrer"
+          >
+            <p className="item-hover" style={{ color: "#FFF5EE" }}>
+              +393928097565
+            </p>
+          </div>
         </li>
       </ul>
 

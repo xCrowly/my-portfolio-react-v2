@@ -8,7 +8,7 @@
 }
 
 .header-section {
-  background-color: var(--bs-body-color);
+  background-color: var(--footer);
   min-height: 100vh;
   padding-top: 100px;
 }
@@ -16,11 +16,14 @@
 #header-image {
   position: fixed;
   z-index: 0 !important;
+  right: 50px;
+  top: calc((100vh / 2) - 200px);
 }
 
 .header-image {
-  width: 100%;
-  height: calc(100vh - 100px);
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
   object-fit: cover;
 }
 
@@ -102,12 +105,23 @@
 }
 
 @keyframes textGlow {
-  0%,53.3%,60%,76%,85%,97%
-  {
+
+  0%,
+  53.3%,
+  60%,
+  76%,
+  85%,
+  97% {
     color: #F0F0F0;
   }
-  53.1%,59%,77%,84.9%,93%,99%,100%
-  {
+
+  53.1%,
+  59%,
+  77%,
+  84.9%,
+  93%,
+  99%,
+  100% {
     color: var(--header-text-glow);
     // text-shadow: 
     // 0px 0px 5px #ffffff,

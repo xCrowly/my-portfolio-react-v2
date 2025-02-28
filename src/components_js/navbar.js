@@ -14,10 +14,10 @@ function returnDark(s) {
   s.style.setProperty("--bs-body-bg", "#1E2022");
   s.style.setProperty("--footer", "#111111");
   s.style.setProperty("--header", "#F0F0F0");
-  s.style.setProperty("--projects", "#52616B");
+  s.style.setProperty("--projects", "#F0F0F0");
   s.style.setProperty("--card", "#1E2022");
-  s.style.setProperty("--intro", "#52616B");
-  s.style.setProperty("--intro-bg", "#52616B");
+  s.style.setProperty("--intro", "#F0F0F0 ");
+  s.style.setProperty("--intro-bg", "#F0F0F0");
   s.style.setProperty("--certification", "#1E2022");
   s.style.setProperty("--skills", "#1E2022");
   s.style.setProperty("--navbar", "#F0F0F0");
@@ -64,10 +64,10 @@ function Navbar() {
 
   function checkDarkMode(darkMode) {
     if (darkMode === "false" || darkMode === "null") {
-      returnDark(getRoot);
+      returnLight(getRoot);
       return;
     } else {
-      returnLight(getRoot);
+      returnDark(getRoot);
       return;
     }
   }
@@ -150,15 +150,15 @@ function Navbar() {
                   Contact me
                 </a>
               </li>
-              <li className="nav-item nav-theme">
+              {/* <li className="nav-item nav-theme">
                 <button className="nav-dark-toggle" onClick={set_dark}>
-                  {darkMode === "false"
+                  {darkMode === "true"
                     ? "Light"
                     : darkMode === null
                     ? "Light"
                     : "Dark"}
                 </button>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>

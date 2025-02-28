@@ -10911,7 +10911,7 @@ textarea.form-control-lg {
   }
 }
 .header-section {
-  background-color: var(--bs-body-color);
+  background-color: var(--footer);
   min-height: 100vh;
   padding-top: 100px;
 }
@@ -10919,11 +10919,14 @@ textarea.form-control-lg {
 #header-image {
   position: fixed;
   z-index: 0 !important;
+  right: 50px;
+  top: calc(50vh - 200px);
 }
 
 .header-image {
-  width: 100%;
-  height: calc(100vh - 100px);
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
   object-fit: cover;
 }
 
@@ -10997,12 +11000,17 @@ textarea.form-control-lg {
 }
 
 #intro-container {
-  padding: 50px;
+  border-radius: 50% !important;
+}
+
+#intro-text {
+  margin: 50px;
   opacity: 0;
 }
 
 #main-sec {
   background-color: var(--intro-bg);
+  color: black;
   z-index: 5 !important;
 }
 
@@ -11138,6 +11146,7 @@ textarea.form-control-lg {
   background: var(--projects);
   width: 100%;
   align-items: center;
+  border-radius: 7px;
   justify-content: center;
 }
 
@@ -11147,7 +11156,8 @@ textarea.form-control-lg {
   align-items: center;
   flex-direction: column;
   width: 100%;
-  height: 70vh;
+  height: 50vh;
+  padding: 0 7px;
 }
 
 .skills-text {
@@ -11166,6 +11176,7 @@ textarea.form-control-lg {
   background-color: var(--card);
   color: var(--navbar);
   opacity: 0;
+  border-radius: 17px;
   margin: 15px 0;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2509803922);
 }

@@ -9,11 +9,18 @@
 }
 
 #intro-container {
-  padding: 50px;
+
+  border-radius: 50% !important;
+}
+
+#intro-text {
+  margin: 50px;
   opacity: 0;
 }
 
+
 #main-sec {
   background-color: var(--intro-bg);
+  color: black;
   z-index: 5 !important;
 }

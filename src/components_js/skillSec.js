@@ -4,7 +4,7 @@ function SkillSection() {
       {/* Header */}
       <p className="text-center fs-1 skills-text">Skills</p>
 
-      <div className="d-flex flex-row justify-content-center align-items-center flex-md-nowrap flex-wrap container">
+      <div className="d-flex flex-row justify-content-center text-black align-items-center flex-md-nowrap flex-wrap container">
         {/* Column one */}
         <div className="skills-column">
           <div className="flex-row skill-item">

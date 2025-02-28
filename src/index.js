@@ -103,9 +103,9 @@ function myFunction() {
           // If the target element is in view
           if (entry.isIntersecting) {
             document
-              .getElementById("intro-container")
+              .getElementById("intro-text")
               .classList.add("animate__animated", "animate__bounceInDown");
-            document.getElementById("intro-container").style.opacity = `1`;
+            document.getElementById("intro-text").style.opacity = `1`;
 
             // Stop observing once the effect is applied (optional)
             observer.unobserve(entry.target);
@@ -177,7 +177,7 @@ function myFunction() {
   projectsObserver();
 
   // // projects animations
-  Object.values(document.getElementById("projects-container").childNodes).map(
+  Object.values(document.getElementById("projects-container").children).map(
     // eslint-disable-next-line array-callback-return
     (item) => {
       if (
