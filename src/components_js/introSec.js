@@ -9,7 +9,7 @@ function MainSection() {
           <strong className="fs-1">Hello,</strong>
           <br />
           <br />
-          I'm a <strong>Self taught developer</strong> with unlimited thirst for
+          I'm a frontend developer with unlimited thirst for
           continuous learning and improvement, Willing to contribute to team
           success through hard work, attention to detail, problem Solving and good
           communication skills.

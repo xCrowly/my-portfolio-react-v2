@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const styles = {
-  backgroundColor: "#FDEBAD",
+  backgroundColor: "#fff3cc",
   backdropFilter: "blur(5px)",
   color: "var(--bs-primary)",
 };
@@ -10,14 +10,14 @@ const styles = {
 function returnDark(s) {
   s.style.setProperty("--bs-primary", "#1E2022");
   s.style.setProperty("--bs-secondary", "#FFF5EE");
-  s.style.setProperty("--bs-body-color", "#FDEBAD");
+  s.style.setProperty("--bs-body-color", "#fff3cc");
   s.style.setProperty("--bs-body-bg", "#1E2022");
   s.style.setProperty("--footer", "#111111");
-  s.style.setProperty("--header", "#FDEBAD");
-  s.style.setProperty("--projects", "#FDEBAD");
+  s.style.setProperty("--header", "#fff3cc");
+  s.style.setProperty("--projects", "#fff3cc");
   s.style.setProperty("--card", "#1E2022");
   s.style.setProperty("--intro", "#F0F0F0 ");
-  s.style.setProperty("--intro-bg", "#FDEBAD");
+  s.style.setProperty("--intro-bg", "#fff3cc");
   s.style.setProperty("--certification", "#1E2022");
   s.style.setProperty("--skills", "#1E2022");
   // s.style.setProperty("--navbar", "#F0F0F0");
