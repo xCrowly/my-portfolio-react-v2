@@ -2,11 +2,10 @@ function MainSection() {
   return (
     <div
       id="main-sec"
-      className="fs-5 container
-        d-flex align-items-center justify-content-center"
+      className="fs-5 d-flex align-items-center justify-content-center"
     >
       <div id="intro-container">
-        <div id="intro-text"> 
+        <div id="intro-text">
           <strong className="fs-1">Hello,</strong>
           <br />
           <br />

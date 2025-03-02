@@ -79,17 +79,17 @@ function myFunction() {
   }
 
   // header image animation
-  if (
-    document.documentElement.scrollTop <
-    document.documentElement.clientHeight * 4
-  ) {
-    document.getElementById("header-image").style.filter = `saturate(${
-      1 - document.documentElement.scrollTop / 500
-    })`;
-    document.getElementById("header-image").style.transform = `translateY(${
-      1 - document.documentElement.scrollTop / 2.5
-    }px)`;
-  }
+  // if (
+  //   document.documentElement.scrollTop <
+  //   document.documentElement.clientHeight * 4
+  // ) {
+  //   document.getElementById("header-image").style.filter = `saturate(${
+  //     1 - document.documentElement.scrollTop / 500
+  //   })`;
+  //   document.getElementById("header-image").style.transform = `translateY(${
+  //     1 - document.documentElement.scrollTop / 2.5
+  //   }px)`;
+  // }
 
   // intro text animation
   function mainObserver() {
@@ -183,7 +183,7 @@ function myFunction() {
       if (
         document.documentElement.scrollTop >
         document.getElementById(`${item.attributes.id.nodeValue}`).offsetTop -
-          350
+        350
       ) {
         document
           .getElementById(`${item.attributes.id.nodeValue}`)

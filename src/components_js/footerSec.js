@@ -70,7 +70,7 @@ function FooterSection() {
       <ul className=" flex-colomn p-2 my-5">
         <li className="flex-row text-danger fw-bold">
           <a href="#img-header" className="text-decoration-none ">
-            <p className="fw-bold fs-1 text-danger item-hover">AHMED BADAWY</p>
+            <p className="fw-bold fs-1 item-hover" style={{color:"#ff1900"}}>AHMED BADAWY</p>
           </a>
         </li>
         {/* {toast} */}

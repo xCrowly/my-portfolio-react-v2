@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const styles = {
-  backgroundColor: "var(--navbar)",
+  backgroundColor: "#FDEBAD",
   backdropFilter: "blur(5px)",
   color: "var(--bs-primary)",
 };
@@ -10,21 +10,22 @@ const styles = {
 function returnDark(s) {
   s.style.setProperty("--bs-primary", "#1E2022");
   s.style.setProperty("--bs-secondary", "#FFF5EE");
-  s.style.setProperty("--bs-body-color", "#F0F0F0");
+  s.style.setProperty("--bs-body-color", "#FDEBAD");
   s.style.setProperty("--bs-body-bg", "#1E2022");
   s.style.setProperty("--footer", "#111111");
-  s.style.setProperty("--header", "#F0F0F0");
-  s.style.setProperty("--projects", "#F0F0F0");
+  s.style.setProperty("--header", "#FDEBAD");
+  s.style.setProperty("--projects", "#FDEBAD");
   s.style.setProperty("--card", "#1E2022");
   s.style.setProperty("--intro", "#F0F0F0 ");
-  s.style.setProperty("--intro-bg", "#F0F0F0");
+  s.style.setProperty("--intro-bg", "#FDEBAD");
   s.style.setProperty("--certification", "#1E2022");
   s.style.setProperty("--skills", "#1E2022");
-  s.style.setProperty("--navbar", "#F0F0F0");
-  s.style.setProperty("--dark-toggle", "#F45050");
+  // s.style.setProperty("--navbar", "#F0F0F0");
+  s.style.setProperty("--dark-toggle", "#ff1900");
   s.style.setProperty("--dark-toggle-hover", "#FFF5EE80");
-  s.style.setProperty("--header-text-glow", "#F45050");
+  s.style.setProperty("--header-text-glow", "#ff1900");
 }
+
 function returnLight(s) {
   s.style.setProperty("--bs-primary", "#F0F0F0");
   s.style.setProperty("--bs-secondary", "#334155");
@@ -38,8 +39,8 @@ function returnLight(s) {
   s.style.setProperty("--intro-bg", "#ffffff");
   s.style.setProperty("--certification", "#E3F2FD");
   s.style.setProperty("--skills", "#E3F2FD");
-  s.style.setProperty("--navbar", "#01579B");
-  s.style.setProperty("--dark-toggle", "#F45050");
+  // s.style.setProperty("--navbar", "#01579B");
+  s.style.setProperty("--dark-toggle", "#ff1900");
   s.style.setProperty("--dark-toggle-hover", "#38434F80");
   s.style.setProperty("--header-text-glow", "#01579B");
 }

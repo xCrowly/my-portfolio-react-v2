@@ -13,10 +13,10 @@ function Card(props) {
             col-md-6 p-lg-5 p-md-2 align-items-center justify-content-center"
       >
         <div>
-          <h5 className="mt-md-0 my-3 fs-2 fw-bolder text-center">
+          <h5 className="mt-md-0 my-3 fs-2 fw-bolder text-center" style={{ color: "#FDEBAD" }}>
             {props.name}
           </h5>
-          <p className="text-start text-md-center text-lg-start">
+          <p className="text-start text-md-center text-lg-start" style={{ color: "#FDEBAD" }}>
             {props.description}
           </p>
         </div>

@@ -4,23 +4,22 @@
   display: flex;
   min-height: auto;
   padding-top: 55px;
-  background: var(--intro);
+  background: #FDEBAD;
   z-index: 5 !important;
 }
 
 #intro-container {
-
   border-radius: 50% !important;
 }
 
 #intro-text {
   margin: 50px;
   opacity: 0;
+  text-align: justify;
 }
 
 
 #main-sec {
-  background-color: var(--intro-bg);
+  background-color: transparent;
   color: black;
-  z-index: 5 !important;
 }
