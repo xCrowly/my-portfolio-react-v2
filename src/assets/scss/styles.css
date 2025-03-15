@@ -10862,7 +10862,8 @@ textarea.form-control-lg {
   align-items: center;
   justify-content: center;
   min-height: 40vh;
-  background-color: var(--footer);
+  background: linear-gradient(to top right, #000000, #00090a, #000000), radial-gradient(circle, #315d36, transparent);
+  background-blend-mode: overlay;
   z-index: 10;
   color: white !important;
 }
@@ -10911,13 +10912,8 @@ textarea.form-control-lg {
   }
 }
 .header-section {
-  --s: 50px;
-  --c: #111111;
-  --_s: calc(2*var(--s)) calc(2*var(--s));
-  --_g: 35.36% 35.36% at;
-  --_c: #0000 66%, #20222a 68% 70%, #0000 72%;
-  background: radial-gradient(var(--_g) 100% 25%, var(--_c)) var(--s) var(--s)/var(--_s), radial-gradient(var(--_g) 0 75%, var(--_c)) var(--s) var(--s)/var(--_s), radial-gradient(var(--_g) 100% 25%, var(--_c)) 0 0/var(--_s), radial-gradient(var(--_g) 0 75%, var(--_c)) 0 0/var(--_s), repeating-conic-gradient(var(--c) 0 25%, rgba(0, 0, 0, 0) 0 50%) 0 0/var(--_s), radial-gradient(var(--_c)) 0 calc(var(--s) / 2)/var(--s) var(--s) var(--c);
-  background-attachment: fixed;
+  background: linear-gradient(to top right, #000306, #002026, #000306), radial-gradient(circle, #315d36, transparent);
+  background-blend-mode: overlay;
   min-height: 100vh;
   padding-top: 100px;
 }
@@ -10932,8 +10928,8 @@ textarea.form-control-lg {
 }
 
 .header-image {
-  width: 400px;
-  height: 400px;
+  width: 350px;
+  height: 350px;
   border-radius: 50%;
   object-fit: cover;
 }
@@ -11003,7 +10999,7 @@ textarea.form-control-lg {
   display: flex;
   min-height: auto;
   padding-top: 55px;
-  background: #fff3cc;
+  background: #ffffff;
   z-index: 5 !important;
 }
 
@@ -11028,13 +11024,8 @@ textarea.form-control-lg {
   }
 }
 .certification-sec {
-  --s: 50px;
-  --c: #111111;
-  --_s: calc(2*var(--s)) calc(2*var(--s));
-  --_g: 35.36% 35.36% at;
-  --_c: #0000 66%,#20222a 68% 70%,#0000 72%;
-  background: radial-gradient(var(--_g) 100% 25%, var(--_c)) var(--s) var(--s)/var(--_s), radial-gradient(var(--_g) 0 75%, var(--_c)) var(--s) var(--s)/var(--_s), radial-gradient(var(--_g) 100% 25%, var(--_c)) 0 0/var(--_s), radial-gradient(var(--_g) 0 75%, var(--_c)) 0 0/var(--_s), repeating-conic-gradient(var(--c) 0 25%, rgba(0, 0, 0, 0) 0 50%) 0 0/var(--_s), radial-gradient(var(--_c)) 0 calc(var(--s) / 2)/var(--s) var(--s) var(--c);
-  background-attachment: fixed;
+  background: linear-gradient(to top right, #001429, #002026, #001429), radial-gradient(circle, #315d36, transparent);
+  background-blend-mode: overlay;
 }
 
 .certification-img {
@@ -11146,20 +11137,16 @@ textarea.form-control-lg {
 }
 
 #projects-sec {
-  background: linear-gradient(#c0674f, #0F9177, #c0674f, #FDEBAD);
+  background: linear-gradient(to top right, #000306, #002026, #000306), radial-gradient(circle, #315d36, transparent);
+  background-blend-mode: overlay;
 }
 
 #skills-sec {
   min-height: 100vh;
   padding: 60px 30px 0 30px;
   z-index: 10 !important;
-  --s: 50px;
-  --c: #111111;
-  --_s: calc(2*var(--s)) calc(2*var(--s));
-  --_g: 35.36% 35.36% at;
-  --_c: #0000 66%,#20222a 68% 70%,#0000 72%;
-  background: radial-gradient(var(--_g) 100% 25%, var(--_c)) var(--s) var(--s)/var(--_s), radial-gradient(var(--_g) 0 75%, var(--_c)) var(--s) var(--s)/var(--_s), radial-gradient(var(--_g) 100% 25%, var(--_c)) 0 0/var(--_s), radial-gradient(var(--_g) 0 75%, var(--_c)) 0 0/var(--_s), repeating-conic-gradient(var(--c) 0 25%, rgba(0, 0, 0, 0) 0 50%) 0 0/var(--_s), radial-gradient(var(--_c)) 0 calc(var(--s) / 2)/var(--s) var(--s) var(--c);
-  background-attachment: fixed;
+  background: linear-gradient(to top right, #000306, #002026, #000306), radial-gradient(circle, #315d36, transparent);
+  background-blend-mode: overlay;
 }
 
 .skill-item {
@@ -11194,13 +11181,8 @@ textarea.form-control-lg {
 }
 
 .card-holder {
-  --s: 50px;
-  --c: #111111;
-  --_s: calc(2*var(--s)) calc(2*var(--s));
-  --_g: 35.36% 35.36% at;
-  --_c: #0000 66%, #20222a 68% 70%, #0000 72%;
-  background: radial-gradient(var(--_g) 100% 25%, var(--_c)) var(--s) var(--s)/var(--_s), radial-gradient(var(--_g) 0 75%, var(--_c)) var(--s) var(--s)/var(--_s), radial-gradient(var(--_g) 100% 25%, var(--_c)) 0 0/var(--_s), radial-gradient(var(--_g) 0 75%, var(--_c)) 0 0/var(--_s), repeating-conic-gradient(var(--c) 0 25%, rgba(0, 0, 0, 0) 0 50%) 0 0/var(--_s), radial-gradient(var(--_c)) 0 calc(var(--s) / 2)/var(--s) var(--s) var(--c);
-  background-attachment: fixed;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(1px);
   color: var(--navbar);
   opacity: 0;
   border-radius: 17px;

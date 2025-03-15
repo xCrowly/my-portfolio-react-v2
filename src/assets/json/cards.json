@@ -4,7 +4,7 @@
             {
                 "name": "Expense Tracker",
                 "link": "https://expense-tracker-404.netlify.app/",
-                "image": "Expense-Tracker.png",
+                "image": "Expense-Tracker.jpg",
                 "description": "calculates your expenses and group them by Months. You can add expenses with any date or notes, delete any specific expenses too. Designed by: Html, css, javascript, Bootstrap, sass, React, React-router, Firebase Authentication and Realtime Database"
             },
             {
@@ -30,12 +30,6 @@
                 "link": "https://xcrowly.github.io/Calculator/",
                 "image": "Calculator.png",
                 "description": "A great app to practice JavaScript. Designed by: Html, css and javascript"
-            },
-            {
-                "name": "Resume",
-                "link": "https://my-resume-10.netlify.app/",
-                "image": "Resume.png",
-                "description": "Resume which was just for practicing. Designed by: Html, css, javascript, Sass, FontAwesome and Bootstrap"
             },
             {
                 "name": "Todo list",

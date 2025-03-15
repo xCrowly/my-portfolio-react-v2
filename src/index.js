@@ -78,19 +78,6 @@ function myFunction() {
       .classList.add("navbar-styling", "nav-animationReverse");
   }
 
-  // header image animation
-  // if (
-  //   document.documentElement.scrollTop <
-  //   document.documentElement.clientHeight * 4
-  // ) {
-  //   document.getElementById("header-image").style.filter = `saturate(${
-  //     1 - document.documentElement.scrollTop / 500
-  //   })`;
-  //   document.getElementById("header-image").style.transform = `translateY(${
-  //     1 - document.documentElement.scrollTop / 2.5
-  //   }px)`;
-  // }
-
   // intro text animation
   function mainObserver() {
     // Target the element

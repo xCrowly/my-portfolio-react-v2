@@ -1,5 +1,7 @@
 @use '../custom';
 
 #projects-sec {
-    background: linear-gradient(#c0674f, #0F9177, #c0674f, #FDEBAD);
+    background: linear-gradient(to top right, #000306, #002026, #000306),
+        radial-gradient(circle, #315d36, transparent);
+    background-blend-mode: overlay;
 }

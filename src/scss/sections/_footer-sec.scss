@@ -19,7 +19,9 @@
   align-items: center;
   justify-content: center;
   min-height: 40vh;
-  background-color: var(--footer);
+  background: linear-gradient(to top right, #000000, #00090a, #000000),
+  radial-gradient(circle, #315d36, transparent);
+background-blend-mode: overlay;
   z-index: 10;
   color: white !important;
 
