@@ -11,6 +11,10 @@ function ProjectsSection() {
       id="projects-sec"
       className="p-md-5 p-3 w-100 align-items-center justify-content-center"
     >
+      <h1 className="text-center fw-bold pt-md-3 pt-5">
+        PROJECTS
+      </h1>
+      
       {/* mapping in card Json file to render elements */}
       <div id="projects-container" className="container">
         {cards.data.cards.map((user) => {

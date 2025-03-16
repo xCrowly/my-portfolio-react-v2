@@ -5,12 +5,17 @@
     font-size: calc(100vh / 16) !important;
     margin: 35px !important;
   }
+
+  #header-image {
+    right: 50px !important;
+  }
+
 }
 
 .header-section {
   background: linear-gradient(to top right, #000306, #002026, #000306),
-  radial-gradient(circle, #315d36, transparent);
-background-blend-mode: overlay;
+    radial-gradient(circle, #315d36, transparent);
+  background-blend-mode: overlay;
   min-height: 100vh;
   padding-top: 100px;
 }
@@ -18,7 +23,8 @@ background-blend-mode: overlay;
 #header-image {
   position: absolute;
   z-index: 0 !important;
-  right: 50px;
+  right: 150px;
+  top: calc(50svh - 150px) !important;
   border: 5px solid transparent;
   background: linear-gradient(#ff1900, #0F9177, #ff4c4c, #FDEBAD, #ff1900);
   top: calc((100vh / 2) - 200px);

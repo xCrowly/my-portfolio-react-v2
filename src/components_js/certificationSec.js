@@ -6,7 +6,7 @@ import cert_Marketing from "../assets/images/UC-marketing.jpg";
 
 function Certification() {
   return (
-    <div className="certification-sec p-md-5 pt-4">
+    <div className="certification-sec p-md-5 py-4">
       <h1 id="certification-title" className="text-center fw-bold pt-md-3 pt-5">
         CERTIFICATIONS
       </h1>

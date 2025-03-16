@@ -1,46 +1,6 @@
-// import { faAt } from "@fortawesome/free-solid-svg-icons";
-// eslint-disable-next-line no-unused-vars
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
 function FooterSection() {
-  // const [toast, setToast] = React.useState("");
-
-  // // to add the toast element to the scene
-  // // function triggerToast() {
-  // //   setToast(
-  // //     (t) =>
-  // //       (t = (
-  // //         <div
-  // //           className="toast fade show toast-welcome zoomIn"
-  // //           role="alert"
-  // //           aria-live="assertive"
-  // //           aria-atomic="true"
-  // //         >
-  // //           <div
-  // //             className="toast-header"
-  // //             style={{ backgroundColor: "var(--bs-primary)", color: "#FFFFFF" }}
-  // //           >
-  // //             <strong className="me-auto">Ahmed Badawy</strong>
-  // //             <button
-  // //               type="button"
-  // //               className="btn-close"
-  // //               data-bs-dismiss="toast"
-  // //               aria-label="Close"
-  // //             ></button>
-  // //           </div>
-  // //           <div className="toast-body bg-secondary rounded-bottom">
-  // //             <strong style={{ color: "var(--steelblue)" }}>Copied </strong>
-  // //             Successfully
-  // //           </div>
-  // //         </div>
-  // //       ))
-  // //   );
-  // // }
-
-  // function removeToast() {
-  //   setToast((r) => (r = undefined));
-  // }
 
   function copyText() {
     navigator.clipboard.writeText("badawy.ca@gmail.com");
@@ -58,19 +18,12 @@ function FooterSection() {
     );
   }
 
-  // timer for lateInit
-  // function toastCountDown() {
-  //   copyText();
-  //   window.setTimeout(() => triggerToast(), 100);
-  //   window.setTimeout(() => removeToast(), 4000);
-  // }
-
   return (
-    <footer id="footer-sec" className="footer-sec p-md-5 pb-3">
-      <ul className=" flex-colomn p-2 my-5">
+    <footer id="footer-sec" className="footer-sec p-md-5 pb-1">
+      <ul className=" flex-colomn p-1 mt-3">
         <li className="flex-row text-danger fw-bold">
-          <a href="#img-header" className="text-decoration-none ">
-            <p className="fw-bold fs-1 item-hover" style={{color:"#ff1900"}}>AHMED BADAWY</p>
+          <a href="#img-header" className="text-decoration-none">
+            <p className="fw-bold fs-1 item-hover" style={{ color: "#ff1900" }}>Ahmed Eissa</p>
           </a>
         </li>
         {/* {toast} */}
@@ -148,7 +101,7 @@ function FooterSection() {
                       text-decoration-none"
             rel="noreferrer"
           >
-            <p className="item-hover" style={{ color: "#FFF5EE" }}>
+            <p className="item-hover fs-5" style={{ color: "#FFF5EE" }}>
               +393928097565
             </p>
           </div>

@@ -89,7 +89,7 @@ function Navbar() {
             style={{ color: "var(--body-color)" }}
             href="#img-header"
           >
-            AHMED BADAWY
+            Ahmed Eissa
           </a>
 
           <button

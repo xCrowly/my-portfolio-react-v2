@@ -91,7 +91,7 @@ function myFunction() {
           if (entry.isIntersecting) {
             document
               .getElementById("intro-text")
-              .classList.add("animate__animated", "animate__bounceInDown");
+              .classList.add("animate__animated", "animate__backInUp");
             document.getElementById("intro-text").style.opacity = `1`;
 
             // Stop observing once the effect is applied (optional)

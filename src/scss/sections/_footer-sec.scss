@@ -6,8 +6,8 @@
   }
 
   .footer-item {
-    min-width: 60vw !important;
-    text-align: center;
+    min-width: 50vw !important;
+    margin: 0 10px !important;
     color: white !important;
   }
 }
@@ -18,7 +18,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  min-height: 40vh;
+  height: auto !important;
   background: linear-gradient(to top right, #000000, #00090a, #000000),
   radial-gradient(circle, #315d36, transparent);
 background-blend-mode: overlay;
@@ -39,7 +39,7 @@ background-blend-mode: overlay;
 }
 
 .item-hover{
-    font-size: xx-large;
+    font-size: x-large;
     transition: all ease-in-out .2s;
 }
 
