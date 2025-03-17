@@ -10850,9 +10850,15 @@ textarea.form-control-lg {
     font-size: 12px !important;
   }
   .footer-item {
-    min-width: 50vw !important;
+    min-width: auto !important;
     margin: 0 10px !important;
     color: white !important;
+  }
+  #footer-sec {
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+    height: auto !important;
   }
 }
 #footer-sec {
@@ -10860,7 +10866,8 @@ textarea.form-control-lg {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
   height: auto !important;
   background: linear-gradient(to top right, #000000, #00090a, #000000), radial-gradient(circle, #315d36, transparent);
   background-blend-mode: overlay;
@@ -10875,7 +10882,7 @@ textarea.form-control-lg {
 .footer-item {
   margin: 0 auto;
   padding: auto;
-  width: min-content;
+  width: max-content;
   color: white !important;
 }
 
@@ -10910,8 +10917,15 @@ textarea.form-control-lg {
     font-size: 6.25vh !important;
     margin: 35px !important;
   }
+}
+@media (max-width: 768px) {
   #header-image {
-    right: 50px !important;
+    margin-right: calc(50% - 150px) !important;
+    margin-top: calc(45% - 300px) !important;
+  }
+  .header-image {
+    width: 300px !important;
+    height: 300px !important;
   }
 }
 .header-section {
@@ -10922,10 +10936,9 @@ textarea.form-control-lg {
 }
 
 #header-image {
-  position: absolute;
+  position: relative;
   z-index: 0 !important;
-  right: 150px;
-  top: calc(50svh - 150px) !important;
+  float: right !important;
   border: 5px solid transparent;
   background: linear-gradient(#ff1900, #0F9177, #ff4c4c, #FDEBAD, #ff1900);
   top: calc(50vh - 200px);

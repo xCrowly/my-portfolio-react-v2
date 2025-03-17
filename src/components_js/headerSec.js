@@ -12,12 +12,14 @@ function Header() {
           Welcome to my website.
         </h1>
       </div>
-      <img
-        id="header-image"
-        className="header-image"
-        src={require("../assets/images/IMG_20230207_160156.jpg")}
-        alt=""
-      />
+      <div className="container">
+        <img
+          id="header-image"
+          className="header-image"
+          src={require("../assets/images/IMG_20230207_160156.jpg")}
+          alt=""
+        />
+      </div>
     </div>
   );
 }

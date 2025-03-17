@@ -19,17 +19,15 @@ function FooterSection() {
   }
 
   return (
-    <footer id="footer-sec" className="footer-sec p-md-5 pb-1">
-      <ul className=" flex-colomn p-1 mt-3">
+    <footer id="footer-sec" className="footer-sec p-5">
+
+
+      <ul className="footer-item flex-colomn flex-md-row ">
         <li className="flex-row text-danger fw-bold">
           <a href="#img-header" className="text-decoration-none">
-            <p className="fw-bold fs-1 item-hover" style={{ color: "#ff1900" }}>Ahmed Eissa</p>
+            <p className="fw-bold item-hover" style={{ color: "#ff1900" }}>Ahmed Eissa</p>
           </a>
         </li>
-        {/* {toast} */}
-      </ul>
-
-      <ul className="footer-item flex-colomn">
         <li>
           <a
             href="https://github.com/xCrowly"
@@ -54,21 +52,10 @@ function FooterSection() {
             </p>
           </a>
         </li>
-        <li>
-          <a
-            href="https://www.youtube.com/@tikkawi"
-            target={"_blank"}
-            className="flex-row fw-bold text-decoration-none"
-            rel="noreferrer"
-          >
-            <p className="item-hover" style={{ color: "#FFF5EE" }}>
-              YouTube
-            </p>
-          </a>
-        </li>
+
       </ul>
 
-      <ul className="footer-item flex-colomn">
+      <ul className="footer-item flex-colomn flex-md-row">
         <li>
           <div
             onClick={() => copyText()}
