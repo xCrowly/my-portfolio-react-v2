@@ -10929,10 +10929,24 @@ textarea.form-control-lg {
   }
 }
 .header-section {
-  background: linear-gradient(to top right, #000306, #002026, #000306), radial-gradient(circle, #315d36, transparent);
-  background-blend-mode: overlay;
+  position: relative;
   min-height: 100vh;
   padding-top: 100px;
+  overflow: hidden;
+}
+
+.header-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../../assets/images/starklee.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: blur(12px); /* Adjust the blur radius as needed */
+  z-index: -1;
 }
 
 #header-image {
@@ -10940,7 +10954,7 @@ textarea.form-control-lg {
   z-index: 0 !important;
   float: right !important;
   border: 5px solid transparent;
-  background: linear-gradient(#ff1900, #0F9177, #ff4c4c, #FDEBAD, #ff1900);
+  background: linear-gradient(#ff1900, #0f9177, #ff4c4c, #fdebad, #ff1900);
   top: calc(50vh - 200px);
 }
 
@@ -11006,7 +11020,7 @@ textarea.form-control-lg {
 
 @keyframes textGlow {
   0%, 53.3%, 60%, 76%, 85%, 97% {
-    color: #F0F0F0;
+    color: #f0f0f0;
   }
   53.1%, 59%, 77%, 84.9%, 93%, 99%, 100% {
     color: var(--header-text-glow);
@@ -11015,13 +11029,11 @@ textarea.form-control-lg {
 #main {
   display: flex;
   min-height: auto;
+  justify-items: center;
+  justify-content: center;
   padding-top: 55px;
   background: #ffffff;
   z-index: 5 !important;
-}
-
-#intro-container {
-  border-radius: 50% !important;
 }
 
 #intro-text {

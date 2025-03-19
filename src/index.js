@@ -40,20 +40,19 @@ footer.render(<FooterSection />);
 
 window.onscroll = () => myFunction();
 
-// chech if the window is loaded
-document.addEventListener("readystatechange", () => {
-  if (document.readyState === "complete") {
-    setTimeout(() => {
-      document.getElementById("loading").style.display = "none";
-      document
-        .getElementById("header-image")
-        .classList.add("animate__animated", "animate__fadeInDown");
-      document
-        .getElementById("header-text")
-        .classList.add("animate__animated", "animate__fadeInUp");
-    }, 2500);
-  }
-});
+// loading animation
+window.onload = () => {
+  const loadingElement = document.getElementById("loading");
+  const headerImage = document.getElementById("header-image");
+  const headerText = document.getElementById("header-text");
+
+  // Hide the loading element
+  loadingElement.style.display = "none";
+
+  // Add animation classes to the header elements
+  headerImage.classList.add("animate__animated", "animate__fadeInDown");
+  headerText.classList.add("animate__animated", "animate__fadeInUp");
+};
 
 function myFunction() {
   // navbar Animation
@@ -170,7 +169,7 @@ function myFunction() {
       if (
         document.documentElement.scrollTop >
         document.getElementById(`${item.attributes.id.nodeValue}`).offsetTop -
-        350
+          350
       ) {
         document
           .getElementById(`${item.attributes.id.nodeValue}`)

@@ -3,13 +3,11 @@
 #main {
   display: flex;
   min-height: auto;
+  justify-items: center;
+  justify-content: center;
   padding-top: 55px;
   background: #ffffff;
   z-index: 5 !important;
-}
-
-#intro-container {
-  border-radius: 50% !important;
 }
 
 #intro-text {
@@ -17,7 +15,6 @@
   opacity: 0;
   text-align: justify;
 }
-
 
 #main-sec {
   background-color: transparent;
