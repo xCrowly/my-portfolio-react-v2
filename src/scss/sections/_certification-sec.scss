@@ -17,15 +17,15 @@
 
 .certification-sec {
   background: linear-gradient(to top right, #001429, #002026, #001429),
-  radial-gradient(circle, #315d36, transparent);
-background-blend-mode: overlay;
+    radial-gradient(circle, #315d36, transparent);
+  background-blend-mode: overlay;
 }
 
 .certification-img {
   transition: all ease-out 0.15s;
   border-radius: 5px;
+  width: 100%;
 }
-
 
 #certification-title {
   opacity: 0;
@@ -131,14 +131,3 @@ background-blend-mode: overlay;
   transform: rotateX(-5deg) rotateY(-10deg) scale(1.05);
   box-shadow: 15px -15px 5px #00000075;
 }
-
-// @keyframes skewTR {
-//   0% {
-//     transform: rotateX(0) rotateY(0);
-//     // transform: scale(1);
-//   }
-//   100% {
-//     // transform: scale(1.2);
-//     transform: rotateX(-20deg) rotateY(10deg);
-//   }
-// }

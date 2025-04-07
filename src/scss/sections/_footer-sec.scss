@@ -1,72 +1,99 @@
 @use "../custom";
 
-@media (max-width: 576px) {
-  .note {
-    font-size: 12px !important;
-  }
-
-  .footer-item {
-    min-width: auto !important;
-    margin: 0 10px !important;
-    color: white !important;
-  }
-  #footer-sec {
-    flex-direction: column !important;  
-    justify-content: center;
-    align-items: center;
-    height: auto !important;
-  } 
-}
-
 #footer-sec {
   position: relative;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  flex-direction: row;
-  justify-content: space-between;
-  height: auto !important;
+  padding: 2rem 1rem;
   background: linear-gradient(to top right, #000000, #00090a, #000000),
     radial-gradient(circle, #315d36, transparent);
   background-blend-mode: overlay;
+  color: white;
   z-index: 10;
-  color: white !important;
+  gap: 1.5rem;
 
-  & ul {
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1200px;
+  }
+
+  ul {
     list-style: none;
-    padding-left: 0;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  li {
+    display: flex;
+    align-items: center;
   }
 }
 
-.footer-item {
-  margin: 0 auto;
-  padding: auto;
-  width: max-content;
-  color: white !important;
-}
-
-.item-hover {
-  font-size: x-large;
-  transition: all ease-in-out .2s;
-}
-
-.item-hover:hover {
-  cursor: pointer;
-  transform: scale(1.1);
-}
-
-.note {
-  position: absolute;
-  left: 10px;
-  bottom: 0;
-  margin: 0;
-  font-size: 15px;
-  font-weight: 300;
+.footer-link,
+.footer-action {
+  font-size: 1.1rem;
+  font-weight: 600;
   color: #fff5ee;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  padding: 0.5rem;
+
+  &:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+    color: #fff5ee;
+  }
+
+  p {
+    margin: 0;
+  }
 }
 
-.toast-welcome {
-  position: fixed;
-  top: 90px;
-  left: 20px;
+.footer-note {
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: rgba(255, 245, 238, 0.7);
+  text-align: center;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  #footer-sec {
+    padding: 1.5rem 1rem;
+    gap: 1rem;
+
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    ul {
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+  }
+
+  .footer-link,
+  .footer-action {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  #footer-sec {
+    padding: 3rem 2rem;
+  }
 }

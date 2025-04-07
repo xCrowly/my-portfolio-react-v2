@@ -10845,73 +10845,95 @@ textarea.form-control-lg {
     padding: 30px 0;
   }
 }
-@media (max-width: 576px) {
-  .note {
-    font-size: 12px !important;
-  }
-  .footer-item {
-    min-width: auto !important;
-    margin: 0 10px !important;
-    color: white !important;
-  }
-  #footer-sec {
-    flex-direction: column !important;
-    justify-content: center;
-    align-items: center;
-    height: auto !important;
-  }
-}
 #footer-sec {
   position: relative;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  flex-direction: row;
-  justify-content: space-between;
-  height: auto !important;
+  padding: 2rem 1rem;
   background: linear-gradient(to top right, #000000, #00090a, #000000), radial-gradient(circle, #315d36, transparent);
   background-blend-mode: overlay;
+  color: white;
   z-index: 10;
-  color: white !important;
+  gap: 1.5rem;
+}
+#footer-sec .footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
 }
 #footer-sec ul {
   list-style: none;
-  padding-left: 0;
-}
-
-.footer-item {
-  margin: 0 auto;
-  padding: auto;
-  width: max-content;
-  color: white !important;
-}
-
-.item-hover {
-  font-size: x-large;
-  transition: all ease-in-out 0.2s;
-}
-
-.item-hover:hover {
-  cursor: pointer;
-  transform: scale(1.1);
-}
-
-.note {
-  position: absolute;
-  left: 10px;
-  bottom: 0;
+  padding: 0;
   margin: 0;
-  font-size: 15px;
-  font-weight: 300;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+#footer-sec li {
+  display: flex;
+  align-items: center;
+}
+
+.footer-link,
+.footer-action {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff5ee;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+.footer-link:hover,
+.footer-action:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
   color: #fff5ee;
 }
-
-.toast-welcome {
-  position: fixed;
-  top: 90px;
-  left: 20px;
+.footer-link p,
+.footer-action p {
+  margin: 0;
 }
 
+.footer-note {
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: rgba(255, 245, 238, 0.7);
+  text-align: center;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  #footer-sec {
+    padding: 1.5rem 1rem;
+    gap: 1rem;
+  }
+  #footer-sec .footer-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  #footer-sec ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .footer-link,
+.footer-action {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 1200px) {
+  #footer-sec {
+    padding: 3rem 2rem;
+  }
+}
 @media (max-width: 576px) {
   .header-text {
     font-size: 6.25vh !important;
@@ -10945,7 +10967,7 @@ textarea.form-control-lg {
   background: url("../../assets/images/starklee.jpg");
   background-size: cover;
   background-position: center;
-  filter: blur(12px); /* Adjust the blur radius as needed */
+  filter: blur(12px);
   z-index: -1;
 }
 
@@ -11060,6 +11082,7 @@ textarea.form-control-lg {
 .certification-img {
   transition: all ease-out 0.15s;
   border-radius: 5px;
+  width: 100%;
 }
 
 #certification-title {

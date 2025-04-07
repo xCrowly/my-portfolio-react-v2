@@ -1,103 +1,106 @@
 import React from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function FooterSection() {
+  const handleCopy = (text, message) => {
+    navigator.clipboard.writeText(text);
+    toast.success(message, {
+      position: "bottom-right",
+      autoClose: 3000,
+      hideProgressBar: true,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+    });
+  };
 
-  function copyText() {
-    navigator.clipboard.writeText("badawy.ca@gmail.com");
-    window.setTimeout(
-      () => alert("Email address has been copied successfully!"),
-      200
-    );
-  }
+  const footerLinks = [
+    {
+      name: "Ahmed Eissa",
+      href: "#img-header",
+      isInternal: true,
+      color: "#ff1900",
+    },
+    {
+      name: "GitHub",
+      href: "https://github.com/xCrowly",
+      isInternal: false,
+    },
+    {
+      name: "LinkedIn",
+      href: "https://www.linkedin.com/in/ahmed-badawy-61bb7a213/",
+      isInternal: false,
+    },
+  ];
 
-  function copyNumber() {
-    navigator.clipboard.writeText("+393928097565");
-    window.setTimeout(
-      () => alert("Number has been copied successfully!"),
-      200
-    );
-  }
+  const footerActions = [
+    {
+      name: "Email",
+      action: () => handleCopy("badawy.ca@gmail.com", "Email copied to clipboard!"),
+    },
+    {
+      name: "Resume",
+      href: "https://drive.google.com/file/d/1PK71-hGAm0RgsdWJlFYfVPs8Zn8siB9m/view?usp=sharing",
+      isInternal: false,
+    },
+    {
+      name: "+39 392 8097565",
+      action: () => handleCopy("+393928097565", "Phone number copied to clipboard!"),
+    },
+  ];
 
   return (
-    <footer id="footer-sec" className="footer-sec p-5">
+    <footer id="footer-sec" className="footer-sec">
+      <div className="footer-content">
+        <ul className="footer-links">
+          {footerLinks.map((link, index) => (
+            <li key={index}>
+              {link.isInternal ? (
+                <a href={link.href} className="footer-link">
+                  <p style={{ color: link.color || "#FFF5EE" }}>{link.name}</p>
+                </a>
+              ) : (
+                <a
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="footer-link"
+                >
+                  <p style={{ color: link.color || "#FFF5EE" }}>{link.name}</p>
+                </a>
+              )}
+            </li>
+          ))}
+        </ul>
 
+        <ul className="footer-actions">
+          {footerActions.map((item, index) => (
+            <li key={index}>
+              {item.action ? (
+                <div className="footer-action" onClick={item.action}>
+                  <p>{item.name}</p>
+                </div>
+              ) : (
+                <a
+                  href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="footer-link"
+                >
+                  <p>{item.name}</p>
+                </a>
+              )}
+            </li>
+          ))}
+        </ul>
+      </div>
 
-      <ul className="footer-item flex-colomn flex-md-row ">
-        <li className="flex-row text-danger fw-bold">
-          <a href="#img-header" className="text-decoration-none">
-            <p className="fw-bold item-hover" style={{ color: "#ff1900" }}>Ahmed Eissa</p>
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://github.com/xCrowly"
-            target={"_blank"}
-            className="flex-row fw-bold text-decoration-none"
-            rel="noreferrer"
-          >
-            <p className="item-hover" style={{ color: "#FFF5EE" }}>
-              GitHub
-            </p>
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://www.linkedin.com/in/ahmed-badawy-61bb7a213/"
-            target={"_blank"}
-            className="flex-row fw-bold text-decoration-none"
-            rel="noreferrer"
-          >
-            <p className="item-hover" style={{ color: "#FFF5EE" }}>
-              LinkedIn
-            </p>
-          </a>
-        </li>
-
-      </ul>
-
-      <ul className="footer-item flex-colomn flex-md-row">
-        <li>
-          <div
-            onClick={() => copyText()}
-            className="flex-row fw-bold fa-container
-                      text-decoration-none"
-            rel="noreferrer"
-          >
-            <p className="item-hover" style={{ color: "#FFF5EE" }}>
-              Email
-            </p>
-          </div>
-        </li>
-        <li>
-          <a
-            href="https://drive.google.com/file/d/1PK71-hGAm0RgsdWJlFYfVPs8Zn8siB9m/view?usp=sharing"
-            target={"_blank"}
-            className="flex-row fw-bold fa-container
-                      text-decoration-none"
-            rel="noreferrer"
-          >
-            <p className="item-hover" style={{ color: "#FFF5EE" }}>
-              Resume
-            </p>
-          </a>
-        </li>
-        <li>
-          <div
-            onClick={() => copyNumber()}
-            className="flex-row fw-bold fa-container
-                      text-decoration-none"
-            rel="noreferrer"
-          >
-            <p className="item-hover fs-5" style={{ color: "#FFF5EE" }}>
-              +393928097565
-            </p>
-          </div>
-        </li>
-      </ul>
-
-      <p className="note">
-        Made by "Html, Css, JavaScript, React, BootStrap, Sass/Scss"
+      <p className="footer-note">
+        Built with: HTML, CSS, JavaScript, React, Bootstrap, Sass
       </p>
+
+      <ToastContainer />
     </footer>
   );
 }
